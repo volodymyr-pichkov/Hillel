@@ -15,13 +15,13 @@
       tailwind.config = {
         theme: {
           extend: {
-            
             fontFamily: {
               montserrat: ["Montserrat", "sans-serif"],
             },
               colors: {
                 customgray: "#878E95",
                 customblue: "#00A0DB",
+                custombackgroundgray: "#EDEFF1",
               },
           },
         },
@@ -35,57 +35,57 @@
       <nav class="flex justify-between items-center bg-black">
 
         <div class="header__leftblock">
-          <h1 class="font-montserrat font-bold text-white text-center text-[90px] leading-[106.2px]">AV-AVIONICS</h1>
+          <h1 class="font-montserrat font-bold text-white whitespace-nowrap text-6xl leading-[106.2px]">AV-AVIONICS</h1>
         </div>
 
         <div class="header__rightblock">
+
           <h2 class="text-white font-montserrat font-black text-[26px] leading-[39px]">
             Reach the heights of free flight with our advanced technologies.
           </h2>
 
-          <div class="header__contacts">
-            <p class="text-customgray">Get in touch with us</p>
-            <a href="tel:+380950183643" class="text-customblue"
+            <p class="text-customgray font-monserrat font-medium text-[28px] leading-[28.5px]">Get in touch with us</p>
+
+            <a href="tel:+380950183643" class="text-customblue font-monserrat font-medium"
               >+38 (095) 018-36-43</a
             >
             <a
               href="mailto:avavionicscompany@gmail.com"
-              class="text-customblue underline"
+              class="text-customblue font-monserrat font-medium funderline"
               >avavionicscompany@gmail.com</a
             >
-          </div>
         </div>
+
       </nav>
     </header>
 
     <main>
-      <div class="bpla_background">
-        <img src="./images/bpla.jpg" alt="bpla" class="bg-black"/>
+      <div class="bpla_background bg-black border relative	">
+        <img src="./images/bpla.jpg" alt="bpla"/>
       </div>
 
-      <div class="container_aviaview">
-        <h2>AVIATION VIEW</h2>
-        <section class="development">
-          <div class="development_hardware">
+      <div class="container_aviaview relative">
+        <h2 class="font-montserrat">AVIATION VIEW</h2>
+        
+        <section class="development relative">
+          <div class="development_hardware relative bg-custombackgroundgray">
             <h3>HARDWARE DEVELOPMENT</h3>
             <p>
-              The process of designing and creating physical electronic
-              components and systems.
+              The process of designing and creating physical electronic components and systems.
             </p>
-            <div class="development__hardware_icons">
+            <div class="development__hardware_icons flex relative">
               <img src="./images/analog_devices.svg" alt="analog_devices" />
               <img src="./images/kicad.svg" alt="kicad" />
               <img src="./images/texas_instrument.svg" alt="texas_instrument" />
             </div>
           </div>
 
-          <div class="development__software">
+          <div class="development__software relative bg-custombackgroundgray">
             <h3>SOFTWARE DEVELOPMENT</h3>
             <p>
-              It encompasses the development of software that controls hardware
-              and facilitates user interaction.
+              It encompasses the development of software that controls hardware and facilitates user interaction.
             </p>
-            <div class="development__software_icons">
+            <div class="development__software_icons flex relative">
               <img src="./images/st.svg" alt="st" />
               <img src="./images/opengl.svg" alt="opengl" />
               <img src="./images/dwin.svg" alt="dwin" />
