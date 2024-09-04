@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TailWind HW</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            customgray: '#878E95',
+            customblue: '#00A0DB',
+          }
+        }
+      }
+    }
+  </script>
+  </head>
+
+  <body class="box-border">
+    
+    <header class="bg-black">
+        <h1 class="text-white">AV-AVIONICS</h1>
+    <nav>
+        <h2 class="text-white">
+          Reach the heights of free flight with our advanced technologies.
+        </h2>
+        <div class="header__contacts">
+          <p class="text-customgray">Get in touch with us</p>
+          <a href="tel:+380950183643" class="text-customblue">+38 (095) 018-36-43</a>
+          <a href="mailto:avavionicscompany@gmail.com" class="text-customblue underline"
+            >avavionicscompany@gmail.com</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="bpla_background">
+        <img src="./images/bpla.jpg" alt="bpla">
+      </div>
+
+      <div class="container_aviaview">
+        <h2>AVIATION VIEW</h2>
+        <section class="development">
+          <div class="development_hardware">
+            <h3>HARDWARE DEVELOPMENT</h3>
+            <p>
+              The process of designing and creating physical electronic
+              components and systems.
+            </p>
+            <div class="development__hardware_icons">
+              <img src="./images/analog_devices.svg" alt="analog_devices">
+              <img src="./images/kicad.svg" alt="kicad">
+              <img src="./images/texas_instrument.svg" alt="texas_instrument">
+            </div>
+          </div>
+
+          <div class="development__software">
+            <h3>SOFTWARE DEVELOPMENT</h3>
+            <p>
+              It encompasses the development of software that controls hardware
+              and facilitates user interaction.
+            </p>
+            <div class="development__software_icons">
+              <img src="./images/st.svg" alt="st">
+              <img src="./images/opengl.svg" alt="opengl">
+              <img src="./images/dwin.svg" alt="dwin">
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="device">
+        <img src="./images/device_image.jpg" alt="device_image">
+        <div class="modeling">
+          <h3>MODELING</h3>
+          <p>
+            The process of creating virtual or mathematical models of a system
+            to analyze its behavior and properties.
+          </p>
+          <div class="modeling__icons">
+            <img src="./images/ansys.svg" alt="ansys">
+            <img src="./images/matlab.svg" alt="matlab">
+          </div>
+        </div>
+      </div>
+
+      <section class="products">
+        <h3>PRODUCTS SYSTEAM</h3>
+        <ul class="products__items">
+          <li>
+            <img src="./images/avionics.jpg" alt="avionics">
+            <h4>Avionics</h4>
+            <p>Ground Station UAV and Aviation</p>
+            <a href="#" target="_blank">Learn more</a>
+          </li>
+          <li>
+            <img
+              src="./images/flight_controller_uav.jpg"
+              alt="fligt_controller_uav"
+            />
+            <h4>Flight Controller UAV</h4>
+            <p>Drone Kamikaze / FPV</p>
+            <a href="#" target="_blank">Learn more</a>
+          </li>
+          <div class="products__items--digital">
+            <img src="./images/digital.jpg" alt="digital">
+            <li>
+              <h4>Digital Video UAV</h4>
+              <p>Digital UAV video link 20-200 km</p>
+              <a href="#" target="_blank">Learn more</a>
+            </li>
+            <li>
+              <h4>INS / GNSS / AHRS</h4>
+              <p>Military Navigation System</p>
+              <a href="#" target="_blank">Learn more</a>
+            </li>
+          </div>
+        </ul>
+        <div class="partners_icons">
+          <ul class="partners_icons__wrapper">
+            <li>
+              <img
+                src="./images/ministry_of_defence.svg"
+                alt="ministry_of_defence"
+              />
+              <a href="#" target="_blank">Ministry of Defence of Ukraine</a>
+            </li>
+            <li>
+              <img
+                src="./images/ukrainian_land_forces.svg"
+                alt="ukrainian_land_forces"
+              >
+              <a href="#" target="_blank">Ukrainian Land Forces</a>
+            </li>
+            <li>
+              <img src="./images/ak_vector.svg" alt="ak_vector">
+              <a href="#" target="_blank">AK Vector</a>
+            </li>
+            <li>
+              <img src="./images/aviasich.svg" alt="aviasich">
+              <a href="#" target="_blank">aviasich</a>
+            </li>
+            <li>
+              <img src="./images/steam_hub.svg" alt="steam_hub">
+              <a href="./images/steam_hub.svg" target="_blank">Steam HUB</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="useful_forms">
+        <div class="useful_forms__company_profile">
+          <div class="useful_forms__contacts">
+            <h4>Address</h4>
+            <p>Kyiv, Ukraine</p>
+
+            <h4>Phone</h4>
+            <p>+38 095 018-36-43</p>
+
+            <h4>E-mail</h4>
+            <p>avavionicscompany@gmail.com</p>
+          </div>
+          <img src="./images/pdf_image.svg" alt="pdf_image">
+          <div class="download_profile">
+            <h4>Company profile</h4>
+            <p>
+              Learn more about our company,  products, and areas of operations.
+            </p>
+            <a href="#">Download</a>
+          </div>
+        </div>
+        <div class="useful_forms__company_forms">
+          <h4>We’re always glad to answer your questions!</h4>
+          <p>Please fill the form below if you have any questions.</p>
+          <form action="#" method="post">
+            <label for="name">Name</label>
+            <input type="name" id="name" name="name" />
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" />
+            <label for="tel">Phone number (optional)</label>
+            <input type="tel" id="tel" name="tel" />
+            <label for="company">Company (optional)</label>
+            <input type="text" id="company" name="company" />
+            <textarea name="message" id="message"></textarea>
+            <button type="submit">Sent</button>
+          </form>
+          <p>
+            Never share sensitive information (credit card numbers, social
+            security numbers, passwords) through this form.
+          </p>
+          <p>
+            This site is protected by reCAPTCHA and the Google Privacy Policy
+            and Terms of Service apply.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <h1>AV-AVIONICS</h1>
+      <div class="footer__contacts">
+        <h4>Have questions?</h4>
+        <p>+38 095 018-36-43</p>
+        <p>24/7 dedicated customer support</p>
+      </div>
+
+      <div class="footer__links">
+        <div class="footer__links_list">
+          <ul>
+            <li>
+              <a href="#">About us</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+            <li>
+              <a href="#">Follow us</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__links_icons">
+          <a href="#" target="_blank">
+            <img src="./images/linkedin.svg" alt="linkedin">
+          </a>
+
+          <a href="#" target="_blank">
+            <img src="./images/facebook.svg" alt="facebook">
+          </a>
+
+          <a href="#" target="_blank">
+            <img src="./images/youtube.svg" alt="youtube">
+          </a>
+
+          <a href="#" target="_blank">
+            <img src="./images/instagram.svg" alt="instagram">
+          </a>
+        </div>
+
+        <div class="footer__email">
+          <h4>Are you a aviation owner or a fan?</h4>
+          <p>
+            Enter your email, and we will update you <br>
+            with How-tos, tips, and the latest news on <br>
+            drones & new system aviation!
+          </p>
+
+          <form action="#" method="post">
+            <label for="email">Email*</label>
+            <input type="email" id="email" name="email">
+            <button type="submit">
+              <img src="./images/telegram.svg" alt="telegram">
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
