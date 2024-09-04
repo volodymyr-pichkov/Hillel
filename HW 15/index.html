@@ -70,7 +70,7 @@
     </header>
 
     <main>
-      <div class="bpla_background bg-black border relative max-w-[1910px]">
+      <div class="bpla_background bg-black border-double relative max-w-[1910px]">
         <img src="./images/bpla.png" alt="bpla" />
       </div>
 
@@ -81,16 +81,16 @@
           AVIATION VIEW
         </h2>
 
-        <section class="development relative">
+        <section class="container_development grid grid-cols-2 grid-rows-2 items-center justify-items-center relative">
           <div
-            class="development_hardware relative bg-custombackgroundgray max-w-[852px] max-h-[277px]"
+            class="container_development__hardware relative bg-custombackgroundgray col-start-1 row-start-1"
           >
             <h3 class="font-montserrat font-medium">HARDWARE DEVELOPMENT</h3>
             <p>
               The process of designing and creating physical electronic
               components and systems.
             </p>
-            <div class="development__hardware_icons flex relative">
+            <div class="container_development__hardware_icons justify-around w-[852px] relative">
               <img src="./images/analog_devices.svg" alt="analog_devices" />
               <img src="./images/kicad.svg" alt="kicad" />
               <img src="./images/texas_instrument.svg" alt="texas_instrument" />
@@ -98,35 +98,30 @@
           </div>
 
           <div
-            class="development__software relative bg-custombackgroundgray max-w-[852px] max-h-[277px]"
+            class="container_development__software relative bg-custombackgroundgray col-start-1 row-start-2"
           >
             <h3>SOFTWARE DEVELOPMENT</h3>
             <p>
               It encompasses the development of software that controls hardware
               and facilitates user interaction.
             </p>
-            <div class="development__software_icons flex relative">
+            <div class="container_development__software_icons w-[852px] relative">
               <img src="./images/st.svg" alt="st" />
               <img src="./images/opengl.svg" alt="opengl" />
               <img src="./images/dwin.svg" alt="dwin" />
             </div>
           </div>
+          <img src="./images/device_image.jpg" alt="device_image" class="col-start-2 row-start-1" />
+              <div class="modeling__icons bg-custombackgroundgray">
+                <h3>MODELING</h3>
+                <p>
+                  The process of creating virtual or mathematical models of a system
+                  to analyze its behavior and properties.
+                </p>
+                <img src="./images/ansys.svg" alt="ansys" />
+                <img src="./images/matlab.svg" alt="matlab" />
+              </div>
         </section>
-      </div>
-
-      <div class="device">
-        <img src="./images/device_image.jpg" alt="device_image" />
-        <div class="modeling">
-          <h3>MODELING</h3>
-          <p>
-            The process of creating virtual or mathematical models of a system
-            to analyze its behavior and properties.
-          </p>
-          <div class="modeling__icons">
-            <img src="./images/ansys.svg" alt="ansys" />
-            <img src="./images/matlab.svg" alt="matlab" />
-          </div>
-        </div>
       </div>
 
       <section class="products">
