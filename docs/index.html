@@ -25,6 +25,7 @@
               customblue2: "#0EB4F2",
               customwhite: "FFFFFF",
               custombackgroundgray: "#EDEFF1",
+              custombackgroundblue: "#16B5EC",
             },
           },
         },
@@ -469,21 +470,22 @@
             drones & new system aviation!
           </p>
 
-          <form action="#" method="post" class="mt-4">
+        <div class="footer__button_input">
+          <form action="#" method="post" class="mt-4 relative">
             <label for="footer-email" class="text-lg font-medium"></label>
             <input
               type="email"
               id="footer-email"
               placeholder="Email*"
               name="email"
-              class="w-full border border-gray-300 p-2 rounded-lg mb-4 placeholder-gray-400"
+              class="w-full border border-gray-300 p-2 rounded-lg mb-4 placeholder-gray-400 relative"
             />
             <button
-              type="submit"
-              class="bg-customblue text-white py-2 px-4 rounded-lg"
-            >
-              <img src="./images/telegram.svg" alt="telegram" class="w-6 h-6" />
-            </button>
+            type="submit"
+            class="text-white py-2 px-4 rounded-lg absolute right-3 p-4"
+          >
+            <img src="./images/telegram.svg" alt="telegram" class="w-6 h-6 text-custombackgroundblue" />
+          </button>
           </form>
         </div>
       </div>
