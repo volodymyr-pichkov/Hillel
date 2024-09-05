@@ -20,6 +20,7 @@
             },
             colors: {
               customgray: "#878E95",
+              customgray2: "#808080",
               customblue: "#00A0DB",
               customblue2: "#0EB4F2",
               custombackgroundgray: "#EDEFF1",
@@ -311,14 +312,14 @@
           </div>
 
           <div
-            class="useful_forms__company_forms bg-white p-6 rounded-lg shadow-lg"
+            class="useful_forms__company_forms bg-white p-6 rounded-lg shadow-lg text-sm leading-3 font-normal"
           >
-            <h4 class="text-xl font-semibold">
+            <h4 class="text-3xl">
               We’re always glad to answer your questions!
             </h4>
-            <p>Please fill the form below if you have any questions.</p>
-            <form action="#" method="post" class="mt-4">
-              <label for="name" class="text-lg font-medium">Name</label>
+            <p class="pt-8">Please fill the form below if you have any questions.</p>
+            <form action="#" method="post" class="mt-2">
+              <label for="name">Name</label>
               <input
                 type="text"
                 id="name"
@@ -326,7 +327,7 @@
                 class="w-full border border-gray-300 p-2 rounded-lg mb-4"
               />
 
-              <label for="email" class="text-lg font-medium">Email</label>
+              <label for="email">Email</label>
               <input
                 type="email"
                 id="email"
@@ -334,7 +335,7 @@
                 class="w-full border border-gray-300 p-2 rounded-lg mb-4"
               />
 
-              <label for="tel" class="text-lg font-medium"
+              <label for="tel"
                 >Phone number (optional)</label
               >
               <input
@@ -344,7 +345,7 @@
                 class="w-full border border-gray-300 p-2 rounded-lg mb-4"
               />
 
-              <label for="company" class="text-lg font-medium"
+              <label for="company"
                 >Company (optional)</label
               >
               <input
@@ -354,7 +355,7 @@
                 class="w-full border border-gray-300 p-2 rounded-lg mb-4"
               />
 
-              <label for="message" class="text-lg font-medium"
+              <label for="message"
                 >Message</label
               >
               <textarea
@@ -366,16 +367,16 @@
 
               <button
                 type="submit"
-                class="bg-customblue text-white py-2 px-4 rounded-lg"
+                class="bg-customblue text-white py-2 px-4 rounded-3xl w-full mx-auto h-12 bg-gradient-to-r from-cyan-500 to-blue-500"
               >
                 Send
               </button>
             </form>
-            <p class="mt-4">
+            <p class="mt-4 text-[16px] text-customgray2">
               Never share sensitive information (credit card numbers, social
               security numbers, passwords) through this form.
             </p>
-            <p>
+            <p class="mt-4 text-[16px] text-customgray2">
               This site is protected by reCAPTCHA and the Google Privacy Policy
               and Terms of Service apply.
             </p>
