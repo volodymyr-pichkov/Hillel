@@ -30,14 +30,14 @@
     </script>
   </head>
 
-  <body class="box-border max-w-[1903px]">
+  <body class="box-border max-w-full">
     <header>
       <nav
-        class="flex flex-col md:flex-row justify-between items-center bg-black py-8 px-4 md:px-8"
+        class="flex flex-col md:flex-row justify-around items-center bg-black py-8 px-4 md:px-8"
       >
         <div class="header__leftblock">
           <h1
-            class="font-montserrat font-bold text-white text-4xl md:text-6xl lg:text-7xl leading-tight text-center md:text-left"
+            class="font-montserrat font-bold text-white text-4xl md:text-6xl lg:text-7xl leading-tight text-center md:text-left mt-30px mr-53px mb-25px ml-64px"
           >
             AV-AVIONICS
           </h1>
@@ -45,7 +45,7 @@
 
         <div class="header__rightblock text-center md:text-left mt-4 md:mt-0">
           <h2
-            class="text-white font-montserrat font-black text-xl md:text-2xl lg:text-3xl"
+            class="text-white font-montserrat font-black mt-20px mr-38px mb-19px text-[20px]"
           >
             Reach the heights of free flight with our advanced technologies.
           </h2>
@@ -164,12 +164,12 @@
         </section>
       </div>
 
-      <section class="products py-8 px-4 md:px-8 lg:px-16">
-        <h3 class="text-2xl md:text-3xl lg:text-4xl text-center mb-8">
-          PRODUCTS SYSTEM
+      <section class="products py-8 px-4 md:px-8 lg:px-16 bg-black text-white">
+        <h3 class="text-7xl text-center mb-8 text-semibold font-montserrat leading-[106px]">
+          PRODUCTS SYSTEAM
         </h3>
-        <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <li class="bg-white p-6 rounded-lg shadow-lg text-center">
+        <ul class="flex justify-between flex-cols-1 md:flex-cols-2 lg:flex-cols-3 gap-8">
+          <li class="p-6 rounded-lg shadow-lg text-center w-80 h-1/2">
             <img
               src="./images/avionics.jpg"
               alt="avionics"
@@ -184,9 +184,9 @@
               >Learn more</a
             >
           </li>
-          <li class="bg-white p-6 rounded-lg shadow-lg text-center">
+          <li class="p-6 rounded-lg shadow-lg text-center w-80 h-80">
             <img
-              src="./images/flight_controller_uav.jpg"
+              src="./images/flight_controller_uav.png"
               alt="flight_controller_uav"
               class="w-full h-auto mb-4 rounded-lg"
             />
@@ -200,14 +200,15 @@
             >
           </li>
           <div
-            class="products__items--digital bg-white p-6 rounded-lg shadow-lg"
+            class="products__items--digital p-6 rounded-lg shadow-lg"
           >
             <img
-              src="./images/digital.jpg"
+              src="./images/digital.png"
               alt="digital"
               class="w-full h-auto mb-4 rounded-lg"
             />
-            <li class="text-center mb-4">
+            <ul class="flex justify-between ">
+            <li class="mb-4">
               <h4 class="text-xl font-semibold">Digital Video UAV</h4>
               <p>Digital UAV video link 20-200 km</p>
               <a
@@ -227,17 +228,18 @@
                 >Learn more</a
               >
             </li>
+            </ul>
           </div>
         </ul>
         <div class="partners_icons mt-8">
-          <ul class="flex flex-wrap justify-center gap-8">
+          <ul class="flex justify-evenly justify-center gap-8">
             <li>
               <img
                 src="./images/ministry_of_defence.svg"
                 alt="ministry_of_defence"
                 class="w-24 h-auto"
               />
-              <a href="#" target="_blank">Ministry of Defence of Ukraine</a>
+              <a href="#" target="_blank" class="underline text-customblue2">Ministry of Defence of Ukraine</a>
             </li>
             <li>
               <img
@@ -245,7 +247,7 @@
                 alt="ukrainian_land_forces"
                 class="w-24 h-auto"
               />
-              <a href="#" target="_blank">Ukrainian Land Forces</a>
+              <a href="#" target="_blank" class="underline text-customblue2">Ukrainian Land Forces</a>
             </li>
             <li>
               <img
@@ -253,7 +255,7 @@
                 alt="ak_vector"
                 class="w-24 h-auto"
               />
-              <a href="#" target="_blank">AK Vector</a>
+              <a href="#" target="_blank" class="underline text-customblue2">AK Vector</a>
             </li>
             <li>
               <img
@@ -261,7 +263,7 @@
                 alt="aviasich"
                 class="w-24 h-auto"
               />
-              <a href="#" target="_blank">aviasich</a>
+              <a href="#" target="_blank" class="underline text-customblue2">aviasich</a>
             </li>
             <li>
               <img
@@ -269,7 +271,7 @@
                 alt="steam_hub"
                 class="w-24 h-auto"
               />
-              <a href="./images/steam_hub.svg" target="_blank">Steam HUB</a>
+              <a href="./images/steam_hub.svg" target="_blank" class="underline text-customblue2">Steam HUB</a>
             </li>
           </ul>
         </div>
