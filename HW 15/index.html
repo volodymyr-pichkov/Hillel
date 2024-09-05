@@ -281,9 +281,9 @@
       <section class="useful_forms py-8 px-4 md:px-8 lg:px-16">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div
-            class="useful_forms__company_profile bg-white p-6 rounded-lg shadow-lg"
+            class="useful_forms__company_profile flex flex-col justify-center items-center bg-white p-6 rounded-lg shadow-lg"
           >
-            <div class="useful_forms__contacts mb-6">
+            <div class="useful_forms__contacts mb-6 flex flex-col justify-center items-center">
               <h4 class="text-xl font-semibold">Address</h4>
               <p>Kyiv, Ukraine</p>
 
@@ -296,23 +296,23 @@
             <img
               src="./images/pdf_image.svg"
               alt="pdf_image"
-              class="w-full h-auto mb-4"
+              class="mb-4"
             />
-            <div class="download_profile">
-              <h4 class="text-xl font-semibold">Company profile</h4>
-              <p class="mt-2">
+            <div class="download_profile flex flex-col justify-center items-center">
+              <h4 class="text-xl font-semibold text-center">Company profile</h4>
+              <p class="mt-2 whitespace-normal pt-[20px] pb-[20px]">
                 Learn more about our company, products, and areas of operations.
               </p>
               <a
                 href="#"
-                class="text-customblue font-medium underline mt-2"
+                class="bg-customblue text-center text-white py-2 px-4 rounded-3xl w-44 mx-auto h-10 bg-gradient-to-r from-cyan-500 to-blue-500"
                 >Download</a
               >
             </div>
           </div>
 
           <div
-            class="useful_forms__company_forms bg-white p-6 rounded-lg shadow-lg text-sm leading-3 font-normal"
+            class="useful_forms__company_forms bg-white p-6 shadow-lg text-sm leading-3 font-normal"
           >
             <h4 class="text-3xl">
               We’re always glad to answer your questions!
@@ -324,7 +324,7 @@
                 type="text"
                 id="name"
                 name="name"
-                class="w-full border border-gray-300 p-2 rounded-lg mb-4"
+                class="w-full border border-gray-300 p-2 rounded mb-4"
               />
 
               <label for="email">Email</label>
@@ -332,7 +332,7 @@
                 type="email"
                 id="email"
                 name="email"
-                class="w-full border border-gray-300 p-2 rounded-lg mb-4"
+                class="w-full border border-gray-300 p-2 rounded mb-4"
               />
 
               <label for="tel"
@@ -342,7 +342,7 @@
                 type="tel"
                 id="tel"
                 name="tel"
-                class="w-full border border-gray-300 p-2 rounded-lg mb-4"
+                class="w-full border border-gray-300 p-2 rounded mb-4"
               />
 
               <label for="company"
@@ -352,7 +352,7 @@
                 type="text"
                 id="company"
                 name="company"
-                class="w-full border border-gray-300 p-2 rounded-lg mb-4"
+                class="w-full border border-gray-300 p-2 rounded mb-4"
               />
 
               <label for="message"
@@ -361,7 +361,7 @@
               <textarea
                 id="message"
                 name="message"
-                class="w-full border border-gray-300 p-2 rounded-lg mb-4"
+                class="resize-none w-full border border-gray-300 p-2 rounded mt-2"
                 rows="4"
               ></textarea>
 
@@ -377,8 +377,8 @@
               security numbers, passwords) through this form.
             </p>
             <p class="mt-4 text-[16px] text-customgray2">
-              This site is protected by reCAPTCHA and the Google Privacy Policy
-              and Terms of Service apply.
+              This site is protected by reCAPTCHA and the Google <a href="#" target="_blank" class="text-customblue">Privacy Policy</a>
+              and <a href="#" target="_blank" class="text-customblue">Terms of Service</a> apply.
             </p>
           </div>
         </div>
