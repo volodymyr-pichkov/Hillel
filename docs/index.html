@@ -23,6 +23,7 @@
               customgray2: "#808080",
               customblue: "#00A0DB",
               customblue2: "#0EB4F2",
+              customwhite: "FFFFFF",
               custombackgroundgray: "#EDEFF1",
             },
           },
@@ -315,9 +316,14 @@
               class="download_profile flex flex-col justify-center items-center"
             >
               <h4 class="text-xl font-semibold text-center">Company profile</h4>
-              <p class="mt-2 whitespace-normal pt-[20px] pb-[20px]">
-                Learn more about our company, products, and areas of operations.
+              <div class="text_profile mt-2 whitespace-normal pt-[20px] pb-[20px]">
+              <p>
+                Learn more about our company,
               </p>
+              <p>products, and areas of operations.
+
+              </p>
+            </div>
               <a
                 href="#"
                 class="bg-customblue text-center text-white py-2 px-4 rounded-3xl w-44 mx-auto h-10 bg-gradient-to-r from-cyan-500 to-blue-500"
@@ -407,26 +413,29 @@
       </section>
     </main>
 
-    <footer class="bg-black text-white py-8 px-4 md:px-8 lg:px-16">
-      <h1 class="text-2xl md:text-3xl lg:text-4xl text-center mb-8">
+    <footer class="flex bg-black text-white py-8 px-4 md:px-8 lg:px-16">
+      <div class="wrapper_title relative">
+      <h1 class="footer__title text-2xl md:text-3xl lg:text-4xl text-center mb-8">
         AV-AVIONICS
       </h1>
-      <div class="footer__contacts text-center mb-8">
+      <div class="footer__contacts text-center mb-8 relative">
         <h4 class="text-xl font-semibold">Have questions?</h4>
         <p class="text-lg">+38 095 018-36-43</p>
         <p>24/7 dedicated customer support</p>
       </div>
+      </div>
 
-      <div class="footer__links text-center mb-8">
-        <div class="footer__links_list mb-4">
-          <ul class="flex justify-center gap-4">
-            <li><a href="#" class="text-customblue underline">About us</a></li>
-            <li><a href="#" class="text-customblue underline">Contact</a></li>
-            <li><a href="#" class="text-customblue underline">Follow us</a></li>
+    <div class="footer__links text-center mb-8 gap-4 relative flex">
+
+        <div class="footer_list mb-4 flex-col">
+          <ul class="gap-4 text-customwhite font-normal">
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Follow us</a></li>
           </ul>
         </div>
 
-        <div class="footer__links_icons flex justify-center gap-4 mb-8">
+        <div class="footer_social flex-row"></div>
           <a href="#" target="_blank">
             <img src="./images/linkedin.svg" alt="linkedin" class="w-8 h-8" />
           </a>
@@ -443,8 +452,10 @@
             <img src="./images/instagram.svg" alt="instagram" class="w-8 h-8" />
           </a>
         </div>
+    </div>
 
-        <div class="footer__email text-center">
+
+        <div class="footer__email text-center flex flex-col">
           <h4 class="text-xl font-semibold">
             Are you an aviation owner or a fan?
           </h4>
