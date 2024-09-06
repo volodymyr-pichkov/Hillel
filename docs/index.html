@@ -21,6 +21,7 @@
             colors: {
               customgray: "#878E95",
               customgray2: "#808080",
+              customgray3: "#383C43",
               customblue: "#00A0DB",
               customblue2: "#0EB4F2",
               customwhite: "FFFFFF",
@@ -376,48 +377,45 @@
     </main>
 
     <footer class="flex justify-around bg-black text-white py-8 px-4 md:px-8 lg:px-16">
-      <div class="wrapper_title relative">
+      <div class="wrapper_title relative flex flex-col">
       <h1 class="footer__title text-2xl md:text-3xl lg:text-4xl text-center mb-8">
         AV-AVIONICS
       </h1>
-      <div class="footer__contacts text-center mb-8 relative">
+      <div class="footer__contacts text-center mb-8 relative flex flex-col items-start">
         <h4 class="text-xl font-semibold">Have questions?</h4>
         <p class="text-lg">+38 095 018-36-43</p>
         <p>24/7 dedicated customer support</p>
       </div>
       </div>
 
-    <div class="footer__links text-center mb-8 gap-4 relative flex">
+      <div class="footer__links text-center mb-8 flex flex-col items-start gap-8">
 
-        <div class="footer_list mb-4 flex-col">
-          <ul class="gap-4 text-customwhite font-normal">
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Follow us</a></li>
-          </ul>
+        <div class="footer_list mb-4">
+            <ul class="text-customwhite font-normal space-y-4">
+                <li><a href="#" class="hover:underline ">About us</a></li>
+                <li><a href="#" class="hover:underline">Contact</a></li>
+                <li><a href="#" class="hover:underline">Follow us</a></li>
+            </ul>
         </div>
-
-        <div class="footer_social flex-row"></div>
-          <a href="#" target="_blank">
-            <img src="./images/linkedin.svg" alt="linkedin" class="w-8 h-8" />
-          </a>
-
-          <a href="#" target="_blank">
-            <img src="./images/facebook.svg" alt="facebook" class="w-8 h-8" />
-          </a>
-
-          <a href="#" target="_blank">
-            <img src="./images/youtube.svg" alt="youtube" class="w-8 h-8" />
-          </a>
-
-          <a href="#" target="_blank">
-            <img src="./images/instagram.svg" alt="instagram" class="w-8 h-8" />
-          </a>
+    
+        <div class="footer_social flex space-x-4">
+            <a href="#" target="_blank" class="transition-transform hover:scale-110">
+                <img src="./images/linkedin.svg" alt="linkedin" class="w-8 h-8" />
+            </a>
+            <a href="#" target="_blank" class="transition-transform hover:scale-110">
+                <img src="./images/facebook.svg" alt="facebook" class="w-8 h-8" />
+            </a>
+            <a href="#" target="_blank" class="transition-transform hover:scale-110">
+                <img src="./images/youtube.svg" alt="youtube" class="w-8 h-8" />
+            </a>
+            <a href="#" target="_blank" class="transition-transform hover:scale-110">
+                <img src="./images/instagram.svg" alt="instagram" class="w-8 h-8" />
+            </a>
         </div>
+    
     </div>
 
-
-        <div class="footer__email text-center flex flex-col">
+        <div class="footer__email text-center relative flex flex-col items-start">
           <h4 class="text-xl font-semibold">
             Are you an aviation owner or a fan?
           </h4>
@@ -439,7 +437,7 @@
               id="footer-email"
               placeholder="Email*"
               name="email"
-              class="w-full border border-gray-300 p-2 rounded-lg mb-4 placeholder-gray-400 relative"
+              class="bg-customblue text-center text-white py-2 px-4 rounded-3xl w-64 mx-auto h-10 bg-customgray3 relative"
             />
             <button
             type="submit"
