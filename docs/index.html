@@ -22,6 +22,7 @@
               customgray: "#878E95",
               customgray2: "#808080",
               customgray3: "#383C43",
+              customblackgray: "#8f8f8f",
               customblue: "#00A0DB",
               customblue2: "#0EB4F2",
               customwhite: "FFFFFF",
@@ -129,42 +130,42 @@
         </section>
       </div>
 
-      <section class="products py-8 px-4 md:px-8 lg:px-16 bg-black text-white">
+      <section class="products py-8 px-4 md:px-8 lg:px-16 bg-black text-white relative">
         <h3
-          class="text-7xl text-center mb-8 text-semibold font-montserrat leading-[106px]"
+          class="text-7xl text-center text-7xl text-semibold font-montserrat leading-[106px] absolute top-12 left-[646px]"
         >
           PRODUCTS SYSTEAM
         </h3>
         <ul
-          class="flex justify-between flex-cols-1 md:flex-cols-2 lg:flex-cols-3 gap-8"
+          class="flex justify-between items-center flex-cols-1 md:flex-cols-2 lg:flex-cols-3 gap-8"
         >
-          <li class="p-6 rounded-lg shadow-lg text-center w-80 h-1/2">
+          <li class="flex flex-col rounded-lg shadow-lg text-center w-80 h-1/2">
             <img
               src="./images/avionics.jpg"
               alt="avionics"
               class="w-full h-auto mb-4 rounded-lg"
             />
-            <h4 class="text-xl font-semibold">Avionics</h4>
-            <p>Ground Station UAV and Aviation</p>
+            <h4 class="text-xl font-semibold mb-2">Avionics</h4>
+            <a class="text-customblue mb-2">Ground Station UAV and Aviation</a>
             <a
               href="#"
               target="_blank"
-              class="bg-customblue text-center text-white py-2 px-4 rounded-3xl w-44 mx-auto h-10 bg-gradient-to-r from-cyan-500 to-blue-500"
+              class="bg-customblue text-center text-white py-4 px-4 rounded-3xl w-44 mx-auto h-10 bg-gradient-to-r from-cyan-500 to-blue-500 flex justify-center items-center mb-2"
               >Learn more</a
             >
           </li>
-          <li class="p-6 rounded-lg shadow-lg text-center w-80 h-80">
+          <li class="flex flex-col rounded-lg shadow-lg text-center w-80 h-80">
             <img
               src="./images/flight_controller_uav.png"
               alt="flight_controller_uav"
               class="w-full h-auto mb-4 rounded-lg"
             />
-            <h4 class="text-xl font-semibold">Flight Controller UAV</h4>
-            <p>Drone Kamikaze / FPV</p>
+            <h4 class="text-xl font-semibold mb-2">Flight Controller UAV</h4>
+            <a class="text-customblue mb-2">Drone Kamikaze / FPV</a>
             <a
               href="#"
               target="_blank"
-              class="bg-customblue text-center text-white py-2 px-4 rounded-3xl w-44 mx-auto h-10 bg-gradient-to-r from-cyan-500 to-blue-500"
+              class="bg-customblue text-center text-white py-4 flex justify-center items-center px-4 rounded-3xl w-44 mx-auto h-10 bg-gradient-to-r from-cyan-500 to-blue-500 mb-2"
               >Learn more</a
             >
           </li>
@@ -175,23 +176,23 @@
               class="w-full h-auto mb-4 rounded-lg"
             />
             <ul class="flex justify-between">
-              <li class="mb-4">
-                <h4 class="text-xl font-semibold">Digital Video UAV</h4>
-                <p>Digital UAV video link 20-200 km</p>
+              <li class="mb-4 text-center flex flex-col">
+                <h4 class="text-xl font-semibold mb-2">Digital Video UAV</h4>
+                <a class="text-customblue mb-2">Digital UAV video link 20-200 km</a>
                 <a
                   href="#"
                   target="_blank"
-                  class="bg-customblue text-center text-white py-2 px-4 rounded-3xl w-44 mx-auto h-10 bg-gradient-to-r from-cyan-500 to-blue-500"
+                  class="bg-customblue text-center text-white py-4 px-4 rounded-3xl w-44 mx-auto h-10 bg-gradient-to-r from-cyan-500 to-blue-500 flex justify-center items-center mb-2"
                   >Learn more</a
                 >
               </li>
-              <li class="text-center">
-                <h4 class="text-xl font-semibold">INS / GNSS / AHRS</h4>
-                <p>Military Navigation System</p>
+              <li class="text-center flex flex-col">
+                <h4 class="text-xl font-semibold mb-2">INS / GNSS / AHRS</h4>
+                <a class="text-customblue mb-2">Military Navigation System</a>
                 <a
                   href="#"
                   target="_blank"
-                  class="bg-customblue text-center text-white py-2 px-4 rounded-3xl w-44 mx-auto h-10 bg-gradient-to-r from-cyan-500 to-blue-500"
+                  class="bg-customblue text-center text-white py-4 px-4 rounded-3xl w-44 mx-auto h-10 bg-gradient-to-r from-cyan-500 to-blue-500 flex justify-center items-center mb-2"
                   >Learn more</a
                 >
               </li>
@@ -301,16 +302,16 @@
             <h4 class="text-3xl">
               We’re always glad to answer your questions!
             </h4>
-            <p class="pt-8">
+            <p class="pt-8 pb-4">
               Please fill the form below if you have any questions.
             </p>
-            <form action="#" method="post" class="mt-2">
+            <form action="#" method="post" class="mt-2 flex flex-col space-y-4">
               <label for="name">Name</label>
               <input
                 type="text"
                 id="name"
                 name="name"
-                class="w-full border border-gray-300 p-2 rounded mb-4"
+                class="w-full border border-gray-300 p-4 rounded mt-2"
               />
 
               <label for="email">Email</label>
@@ -318,7 +319,7 @@
                 type="email"
                 id="email"
                 name="email"
-                class="w-full border border-gray-300 p-2 rounded mb-4"
+                class="w-full border border-gray-300 p-4 rounded mt-2"
               />
 
               <label for="tel">Phone number (optional)</label>
@@ -326,7 +327,7 @@
                 type="tel"
                 id="tel"
                 name="tel"
-                class="w-full border border-gray-300 p-2 rounded mb-4"
+                class="w-full border border-gray-300 p-4 rounded mt-2"
               />
 
               <label for="company">Company (optional)</label>
@@ -334,7 +335,7 @@
                 type="text"
                 id="company"
                 name="company"
-                class="w-full border border-gray-300 p-2 rounded mb-4"
+                class="w-full border border-gray-300 p-4 rounded mt-2"
               />
 
               <label for="message">Message</label>
@@ -376,21 +377,21 @@
       </section>
     </main>
 
-    <footer class="flex justify-around bg-black text-white py-8 px-4 md:px-8 lg:px-16">
-      <div class="wrapper_title relative flex flex-col">
-      <h1 class="footer__title text-2xl md:text-3xl lg:text-4xl text-center mb-8">
+    <footer class="flex justify-between bg-black text-white py-8 px-4 md:px-8 lg:px-16 w-full max-w-full">
+      <div class="wrapper_title relative">
+      <h1 class="footer__title text-8xl lg:text-8xl text-center leading-normal font-bold mb-8">
         AV-AVIONICS
       </h1>
-      <div class="footer__contacts text-center mb-8 relative flex flex-col items-start">
-        <h4 class="text-xl font-semibold">Have questions?</h4>
+      <div class="footer__contacts text-center mb-8 relative flex flex-col items-start font-normal">
+        <h4 class="text-xl">Have questions?</h4>
         <p class="text-lg">+38 095 018-36-43</p>
-        <p>24/7 dedicated customer support</p>
+        <p class="text-customblackgray">24/7 dedicated customer support</p>
       </div>
       </div>
 
-      <div class="footer__links text-center mb-8 flex flex-col items-start gap-8">
+      <div class="footer__links text-center mb-8 flex flex-col items-start gap-8 relative">
 
-        <div class="footer_list mb-4">
+        <div class="footer_list mb-4 text-left">
             <ul class="text-customwhite font-normal space-y-4">
                 <li><a href="#" class="hover:underline ">About us</a></li>
                 <li><a href="#" class="hover:underline">Contact</a></li>
@@ -398,7 +399,7 @@
             </ul>
         </div>
     
-        <div class="footer_social flex space-x-4">
+        <div class="footer_social flex space-x-4 relative">
             <a href="#" target="_blank" class="transition-transform hover:scale-110">
                 <img src="./images/linkedin.svg" alt="linkedin" class="w-8 h-8" />
             </a>
@@ -413,21 +414,19 @@
             </a>
         </div>
     
-    </div>
+      </div>
 
         <div class="footer__email text-center relative flex flex-col items-start">
           <h4 class="text-xl font-semibold">
             Are you an aviation owner or a fan?
           </h4>
+          <div class="footer__wrapper_text text-customblackgray">
           <p class="mt-2">
             Enter your email, and we will update you
-          </p>
-          <p>
             with How-tos, tips, and the latest news on
-          </p>
-          <p>
             drones & new system aviation!
           </p>
+        </div>
 
         <div class="footer__button_input">
           <form action="#" method="post" class="mt-4 relative">
