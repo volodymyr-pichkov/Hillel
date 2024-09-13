@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    min-width: 320px;
+    max-height: 4842px;
+}
+
+.header {
+    position: relative;
+}
+
+.header__navigation {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .burger-menu {
+        position: relative;
+        padding-top: 12vw;
+        padding-bottom: 12vw;
+        padding-left: 4.75vw;
+    }
+    
+
+    .logo-header {
+        position: relative;
+        color: #a87b62;
+        padding-top: 6.25vw;
+        padding-right: 29.5vw;
+        padding-bottom: 6.25vw;
+        padding-left: 29.5vw;
+    }
+    
+    .icon-market {
+        position: relative;
+        padding-top: 12vw;
+        padding-right: 4.75vw;
+        padding-bottom: 12vw;
+    }
+
+    .main {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+// Задействован перевод HEX в RGBA для прозрачности только ИЗОБРАЖЕНИЯ
+    .main__logo-main {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        max-width: 320px;
+        max-height: 463px;
+        background-image: url(../images/logo-main.jpg);
+        background-size: cover;
+        background: linear-gradient(
+        rgba(86, 64, 52, 0.7) 
+        );
+    }
+
+        h2,h3 {
+            color: #ffffff;
+            font-family: "Cormorant Garamond", serif;
+            font-weight: 500;
+            font-style: normal;
+            text-align: center;
+        }
+        
+        h2 {
+            position: relative;
+            font-size: 38px;
+            line-height: 49.4px;
+            letter-spacing: 1.14px;
+            padding-top: 62.5vw;
+            padding-right: 12.5vw;
+            padding-left: 12.5vw;
+        }
+
+        h3 {
+            position: relative;
+            font-style: italic;
+            font-size: 34px;
+            line-height: 44.2px;
+            font-weight: 300;
+            padding-top: 5vw;
+            padding-right: 18.13vw;
+            padding-left: 18.11vw;
+            padding-bottom: 62.5vw;
+            }
