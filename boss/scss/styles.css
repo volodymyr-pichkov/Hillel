@@ -14,7 +14,6 @@ body {
 .header__navigation {
   position: relative;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -40,4 +39,32 @@ body {
   padding-top: 12vw;
   padding-right: 4.75vw;
   padding-bottom: 12vw;
+}
+
+.main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main .main__logo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/images/main/logo-main.jpg);
+  background-size: cover;
+  background: linear-gradient(rgba(86, 64, 52, 0.7));
+  background-position: center;
+}
+.main .main__logo img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.main .main__logo .main__logo--text {
+  position: absolute;
+  text-align: center;
 }/*# sourceMappingURL=styles.css.map */
