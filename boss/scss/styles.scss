@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: 2px solid black !important; // ПОЛЕЗНОЕ
+  // outline: 2px solid black !important; // ПОЛЕЗНОЕ
 }
 
 body {
@@ -51,10 +51,7 @@ body {
 
 .main__logo {
   position: relative; // ПЕРЕМЕННАЯ
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: flex; // ПЕРЕМЕННАЯ
   background-image: url(/images/main/logo-main.jpg);
   background-size: cover;
   background: linear-gradient(rgba(86, 64, 52, 0.7));
@@ -67,8 +64,12 @@ body {
     }
 
   .main__logo--text {
-    width: 100%;
-    height: 100%;
+    display: flex; // ПЕРЕМЕННАЯ
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%; // ПОВТОР
+    height: 100%; // ПОВТОР
     padding: 62.5% 12.5%; // ЗАПИСЬ ВЕРНА???
     position: absolute; // ПЕРЕМЕННАЯ
     text-align: center;
@@ -76,18 +77,27 @@ body {
 
 
   h2 {
-    position: relative;
-    font-family: "Cormorant Garamond", serif;
-    font-weight: 500;
+    width: 100%; // ПОВТОР
+    max-width: 240px;
+    height: 100%; // ПОВТОР
+    max-height: 25px;
+    position: relative; // ПЕРЕМЕННАЯ
+    font-family: "Cormorant Garamond", serif; // ПОВТОР
+    font-weight: 500; // ПОВТОР
     font-style: normal;
     font-size: 38px;
     line-height: 49.4px;
+    letter-spacing: 0.75px;
   }
 
   p {
-    position: relative;
-    font-family: "Cormorant Garamond", serif;
-    font-weight: 500;
+    position: relative; // ПЕРЕМЕННАЯ
+    width: 100%; // ПОВТОР
+    max-width: 205px;
+    height: 100%; // ПОВТОР
+    max-height: 22px;
+    font-family: "Cormorant Garamond", serif; // ПОВТОР
+    font-weight: 500; // ПОВТОР
     font-style: italic;
     font-size: 34px;
     line-height: 44.2px;
@@ -96,5 +106,15 @@ body {
   }
     }
   }
+
+.main__newin {
+  background-color: pink;
+
+  .main__newin--line {
+    .main__newin {
+      background-color: pink;
+    }
+  }
+}
 }
 

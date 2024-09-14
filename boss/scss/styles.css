@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: 2px solid black !important;
 }
 
 body {
@@ -49,9 +48,6 @@ body {
 .main .main__logo {
   position: relative;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-image: url(/images/main/logo-main.jpg);
   background-size: cover;
   background: linear-gradient(rgba(86, 64, 52, 0.7));
@@ -63,6 +59,10 @@ body {
   height: 100%;
 }
 .main .main__logo .main__logo--text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
   width: 100%;
   height: 100%;
   padding: 62.5% 12.5%;
@@ -71,15 +71,24 @@ body {
   color: #ffffff;
 }
 .main .main__logo .main__logo--text h2 {
+  width: 100%;
+  max-width: 240px;
+  height: 100%;
+  max-height: 25px;
   position: relative;
   font-family: "Cormorant Garamond", serif;
   font-weight: 500;
   font-style: normal;
   font-size: 38px;
   line-height: 49.4px;
+  letter-spacing: 0.75px;
 }
 .main .main__logo .main__logo--text p {
   position: relative;
+  width: 100%;
+  max-width: 205px;
+  height: 100%;
+  max-height: 22px;
   font-family: "Cormorant Garamond", serif;
   font-weight: 500;
   font-style: italic;
@@ -87,4 +96,10 @@ body {
   line-height: 44.2px;
   margin: 16px 18px 0px 17px;
   white-space: nowrap;
+}
+.main .main__newin {
+  background-color: pink;
+}
+.main .main__newin .main__newin--line .main__newin {
+  background-color: pink;
 }/*# sourceMappingURL=styles.css.map */
