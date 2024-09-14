@@ -97,7 +97,7 @@ body {
     height: 100%; // ПОВТОР
     max-height: 22px;
     font-family: "Cormorant Garamond", serif; // ПОВТОР
-    font-weight: 500; // ПОВТОР
+    font-weight: 300;
     font-style: italic;
     font-size: 34px;
     line-height: 44.2px;
@@ -108,13 +108,48 @@ body {
   }
 
 .main__newin {
-  background-color: pink;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .main__newin--container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
   .main__newin--line {
-    .main__newin {
-      background-color: pink;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 80px;
+
+    height: 1px; /* Толщина линии */
+    background-color: #a87b62; /* Цвет линии */
+    margin: 10px 0px;
+    }
+
+  .main__newin--card_container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    }
+
+    img {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      max-width: 130px;
+      max-height: 136px;
     }
   }
-}
 }
 
