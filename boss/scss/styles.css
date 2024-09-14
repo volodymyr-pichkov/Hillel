@@ -125,12 +125,30 @@ body {
   background-color: #a87b62; /* Цвет линии */
   margin: 10px 0px;
 }
-.main .main__newin .main__newin--card_container {
+.main .main__newin .main__cards_container {
   position: relative;
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.main .main__newin .main__card_container--leftblock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main .main__newin .main__card_container--rightblock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .main .main__newin img {
+  display: flex;
+  flex-direction: column;
   position: relative;
   width: 100%;
   height: 100%;
