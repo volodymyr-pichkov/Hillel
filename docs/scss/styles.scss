@@ -101,7 +101,7 @@ body {
         font-size: 34px;
         line-height: 44.2px;
         margin: 16px 18px 0px 17px;
-        white-space: nowrap;
+        white-space: nowrap; // ПОВТОР
       }
     }
   }
@@ -156,6 +156,28 @@ body {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+
+      
+    }
+
+    .main__card_container--leftblock p {
+      margin-top: 20px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      font-style: normal;
+      font-size: 16px;
+      line-height: 20.8px;
+      text-align: center;
+    }
+
+    .main__card_container--rightblock p {
+      margin-top: 20px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      font-style: normal;
+      font-size: 16px;
+      line-height: 20.8px;
+      text-align: center;
     }
 
     img {

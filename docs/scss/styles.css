@@ -146,6 +146,24 @@ body {
   justify-content: center;
   align-items: center;
 }
+.main .main__newin .main__card_container--leftblock p {
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20.8px;
+  text-align: center;
+}
+.main .main__newin .main__card_container--rightblock p {
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20.8px;
+  text-align: center;
+}
 .main .main__newin img {
   display: flex;
   flex-direction: column;
