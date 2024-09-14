@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  min-width: 320px;
+  max-height: 4842px;
+}
+
+.header__navigation {
+  position: relative; // ПЕРЕМЕННАЯ
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__navigation--icon-burger {
+  position: relative; // ПЕРЕМЕННАЯ
+  padding-top: 12vw;
+  padding-bottom: 12vw;
+  padding-left: 4.75vw;
+}
+
+.header__navigation--logo-header {
+  position: relative; // ПЕРЕМЕННАЯ
+  color: #a87b62;  // ПЕРЕМЕННАЯ
+  padding-top: 6.25vw;
+  padding-right: 29.5vw;
+  padding-bottom: 6.25vw;
+  padding-left: 29.5vw;
+}
+
+.header__navigation--icon-market {
+  position: relative; // ПЕРЕМЕННАЯ
+  padding-top: 12vw;
+  padding-right: 4.75vw;
+  padding-bottom: 12vw;
+}
