@@ -67,10 +67,11 @@ body {
     }
 
   .main__logo--text {
+    margin: 62.5% 12.5%; // ЗАПИСЬ ВЕРНА???
     position: absolute; // ПЕРЕМЕННАЯ
     text-align: center;
     color: #ffffff; // ПЕРЕМЕННАЯ
-    padding: 62.5vh 12.5vw; // ЗАПИСЬ ВЕРНА???
+
 
   h2 {
     position: relative;

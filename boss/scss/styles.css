@@ -63,10 +63,10 @@ body {
   height: 100%;
 }
 .main .main__logo .main__logo--text {
+  margin: 62.5% 12.5%;
   position: absolute;
   text-align: center;
   color: #ffffff;
-  padding: 62.5vh 12.5vw;
 }
 .main .main__logo .main__logo--text h2 {
   position: relative;
