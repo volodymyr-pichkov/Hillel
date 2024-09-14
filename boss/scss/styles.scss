@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: 2px solid black !important; // ПОЛЕЗНОЕ
 }
 
 body {
@@ -16,7 +17,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
 
 .header__navigation--icon-burger {
   position: relative; // ПЕРЕМЕННАЯ
@@ -39,6 +39,7 @@ body {
   padding-top: 12vw;
   padding-right: 4.75vw;
   padding-bottom: 12vw;
+}
 }
 
 .main {
@@ -66,16 +67,30 @@ body {
     }
 
   .main__logo--text {
-    position: absolute;
+    position: absolute; // ПЕРЕМЕННАЯ
     text-align: center;
+    color: #ffffff; // ПЕРЕМЕННАЯ
+    padding: 62.5vh 12.5vw; // ЗАПИСЬ ВЕРНА???
 
   h2 {
-    
+    position: relative;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 38px;
+    line-height: 49.4px;
   }
 
   p {
-
+    position: relative;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 34px;
+    line-height: 44.2px;
+    margin-top: 16px;
   }
     }
   }
 }
+

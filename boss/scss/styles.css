@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: 2px solid black !important;
 }
 
 body {
@@ -17,15 +18,13 @@ body {
   justify-content: center;
   align-items: center;
 }
-
-.header__navigation--icon-burger {
+.header__navigation .header__navigation--icon-burger {
   position: relative;
   padding-top: 12vw;
   padding-bottom: 12vw;
   padding-left: 4.75vw;
 }
-
-.header__navigation--logo-header {
+.header__navigation .header__navigation--logo-header {
   position: relative;
   color: #a87b62;
   padding-top: 6.25vw;
@@ -33,8 +32,7 @@ body {
   padding-bottom: 6.25vw;
   padding-left: 29.5vw;
 }
-
-.header__navigation--icon-market {
+.header__navigation .header__navigation--icon-market {
   position: relative;
   padding-top: 12vw;
   padding-right: 4.75vw;
@@ -67,4 +65,23 @@ body {
 .main .main__logo .main__logo--text {
   position: absolute;
   text-align: center;
+  color: #ffffff;
+  padding: 62.5vh 12.5vw;
+}
+.main .main__logo .main__logo--text h2 {
+  position: relative;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 38px;
+  line-height: 49.4px;
+}
+.main .main__logo .main__logo--text p {
+  position: relative;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 34px;
+  line-height: 44.2px;
+  margin-top: 16px;
 }/*# sourceMappingURL=styles.css.map */
