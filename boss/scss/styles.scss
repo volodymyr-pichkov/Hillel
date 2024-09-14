@@ -67,7 +67,9 @@ body {
     }
 
   .main__logo--text {
-    margin: 62.5% 12.5%; // ЗАПИСЬ ВЕРНА???
+    width: 100%;
+    height: 100%;
+    padding: 62.5% 12.5%; // ЗАПИСЬ ВЕРНА???
     position: absolute; // ПЕРЕМЕННАЯ
     text-align: center;
     color: #ffffff; // ПЕРЕМЕННАЯ
@@ -89,7 +91,8 @@ body {
     font-style: italic;
     font-size: 34px;
     line-height: 44.2px;
-    margin-top: 16px;
+    margin: 16px 18px 0px 17px;
+    white-space: nowrap;
   }
     }
   }
