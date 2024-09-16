@@ -100,6 +100,7 @@
     flex-direction: column;
     justify-content: $justify-center;
     align-items: $align-center;
+    margin: 70px 15px;
 
     .main__newin--container {
       width: $width-100;
@@ -108,6 +109,10 @@
       flex-direction: column;
       justify-content: $justify-center;
       align-items: $align-center;
+
+      p {
+        margin: 35px 7px 10px 6px;
+      }
     }
 
     .main__newin--line {
@@ -147,12 +152,7 @@
         align-items: $align-center;
 
         p {
-          font-family: $font-poppins;
-          font-weight: 500;
-          font-size: 16px;
-          line-height: 20.8px;
-          font-style: normal;
-          text-align: $text-center;
+          @include text-style-poppins;
           margin-top: 15px;
 
           span {
@@ -170,12 +170,7 @@
         align-items: $align-center;
 
         p {
-          font-family: $font-poppins;
-          font-weight: 500;
-          font-size: 16px;
-          line-height: 20.8px;
-          font-style: normal;
-          text-align: $text-center;
+          @include text-style-poppins;
           margin-top: 15px;
 
           span {
@@ -186,13 +181,9 @@
     }
 
     .main__newin-text-scroll {
-      font-family: $font-poppins;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 5vw;
-      line-height: 20.8px;
-      text-align: $text-center;
+      @include text-style-poppins;
       color: $color-black;
+      font-weight: 600;
       margin-top: 40px;
 
       span {

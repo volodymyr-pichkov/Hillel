@@ -97,6 +97,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 70px 15px;
 }
 .main .main__newin .main__newin--container {
   width: 100%;
@@ -105,6 +106,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.main .main__newin .main__newin--container p {
+  margin: 35px 7px 10px 6px;
 }
 .main .main__newin .main__newin--line {
   width: 100%;
@@ -142,11 +146,11 @@ body {
 }
 .main .main__newin .main__newin-cards-container .main__newin-cards-container--leftblock p {
   font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20.8px;
   font-style: normal;
+  font-size: 5vw;
   text-align: center;
+  font-weight: 500;
+  line-height: 20.8px;
   margin-top: 15px;
 }
 .main .main__newin .main__newin-cards-container .main__newin-cards-container--leftblock p span {
@@ -162,11 +166,11 @@ body {
 }
 .main .main__newin .main__newin-cards-container .main__newin-cards-container--rightblock p {
   font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20.8px;
   font-style: normal;
+  font-size: 5vw;
   text-align: center;
+  font-weight: 500;
+  line-height: 20.8px;
   margin-top: 15px;
 }
 .main .main__newin .main__newin-cards-container .main__newin-cards-container--rightblock p span {
@@ -175,11 +179,12 @@ body {
 .main .main__newin .main__newin-text-scroll {
   font-family: "Poppins", sans-serif;
   font-style: normal;
-  font-weight: 600;
   font-size: 5vw;
-  line-height: 20.8px;
   text-align: center;
+  font-weight: 500;
+  line-height: 20.8px;
   color: #1d1613;
+  font-weight: 600;
   margin-top: 40px;
 }
 .main .main__newin .main__newin-text-scroll span {

@@ -1,0 +1,8 @@
+@mixin text-style-poppins {
+    font-family: $font-poppins;
+    font-style: normal;
+    font-size: 5vw;
+    text-align: $text-center;
+    font-weight: 500;
+    line-height: 20.8px;
+}
