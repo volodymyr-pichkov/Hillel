@@ -1,0 +1,174 @@
+@import "variables";
+@import "mixins";
+@import "base";
+@import "components/card";
+
+* {
+  // outline: 2px solid black !important;
+}
+
+.header__navigation {
+  display: $flexbox;
+  justify-content: $justify-center;
+  align-items: $align-center;
+
+  .header__navigation--icon-burger {
+    padding-top: 12vh;
+    padding-bottom: 12vh;
+    padding-left: 4.75vw;
+  }
+
+  .header__navigation--logo-header {
+    color: $color-brown;
+    padding-top: 6.25vh;
+    padding-right: 29.5vw;
+    padding-bottom: 6.25vh;
+    padding-left: 29.5vw;
+  }
+
+  .header__navigation--icon-market {
+    padding-top: 12vh;
+    padding-right: 4.75vw;
+    padding-bottom: 12vh;
+  }
+}
+
+.main {
+  display: $flexbox;
+  flex-direction: column;
+  justify-content: $justify-center;
+  align-items: $align-center;
+
+  .main__logo {
+    display: $flexbox;
+    position: $pos-rel;
+    background-image: url(/images/main/logo-main.jpg);
+    background-size: cover;
+    background: linear-gradient(rgba(86, 64, 52, 0.7));
+    background-position: center;
+
+    img {
+      width: $width-100;
+      height: $height-100;
+    }
+
+    .main__logo--text {
+      display: $flexbox;
+      flex-direction: column;
+      justify-content: $justify-center;
+      align-items: flex-end;
+      width: $width-100;
+      height: $height-100;
+      padding: 62.5% 12.5%; // ЗАПИСЬ ВЕРНА???
+      position: $pos-abs; // ЧЕК ПО РЕСПОНСИВУ!!!
+      text-align: $text-center;
+      color: $color-white;
+
+      h2 {
+        width: $width-100;
+        max-width: 240px;
+        height: $height-100;
+        max-height: 25px;
+        font-family: $font-cormorant;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 38px;
+        line-height: 49.4px;
+        letter-spacing: 0.75px;
+      }
+
+      p {
+        width: $width-100;
+        max-width: 205px;
+        height: $height-100;
+        max-height: 22px;
+        font-family: $font-cormorant;
+        font-weight: 300;
+        font-style: italic;
+        font-size: 34px;
+        line-height: 44.2px;
+        margin: 16px 18px 0px 17px;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  .main__newin {
+    width: $width-100;
+    height: $height-100;
+    display: $flexbox;
+    flex-direction: column;
+    justify-content: $justify-center;
+    align-items: $align-center;
+
+    .main__newin--container {
+      width: $width-100;
+      height: $height-100;
+      display: $flexbox;
+      flex-direction: column;
+      justify-content: $justify-center;
+      align-items: $align-center;
+    }
+
+    .main__newin--line {
+      width: $width-100;
+      height: $height-100;
+      max-width: 80px;
+      height: 1px; /* Толщина линии */
+      background-color: #a87b62; /* Цвет линии */
+      margin: 10px 0px;
+    }
+
+    .main__cards-container {
+      // БЭМ чек
+      width: $width-100;
+      height: $height-100;
+      display: $flexbox;
+      flex-direction: row;
+      justify-content: $justify-center;
+      align-items: $align-center;
+    }
+
+    .main__cards-container--leftblock {
+      display: $flexbox;
+      flex-direction: column;
+      justify-content: $justify-center;
+      align-items: $align-center;
+    }
+    .main__cards-container--rightblock {
+      display: $flexbox;
+      flex-direction: column;
+      justify-content: $justify-center;
+      align-items: $align-center;
+    }
+
+    .main__cards-container--leftblock p {
+      margin-top: 20px;
+      font-family: $font-poppins;
+      font-weight: 500;
+      font-style: normal;
+      font-size: 16px;
+      line-height: 20.8px;
+      text-align: $text-center;
+    }
+
+    .main__cards-container--rightblock p {
+      margin-top: 20px;
+      font-family: $font-poppins;
+      font-weight: 500;
+      font-style: normal;
+      font-size: 16px;
+      line-height: 20.8px;
+      text-align: $text-center;
+    }
+
+    img {
+      display: $flexbox;
+      flex-direction: column;
+      width: $width-100;
+      height: $height-100;
+      max-width: 130px;
+      max-height: 136px;
+    }
+  }
+}

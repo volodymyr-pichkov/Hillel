@@ -1,0 +1,12 @@
+* {
+  margin: $margin-0;
+  padding: $padding-0;
+  box-sizing: $border-box;
+}
+
+body {
+  width: $width-100-vp;
+  height: $height-100-vp;
+  min-width: $min-width-vp;
+  min-height: $min-height-vp;
+}

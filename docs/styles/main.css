@@ -9,53 +9,47 @@ body {
   width: 100vw;
   height: 100vh;
   min-width: 320px;
-  max-height: 4842px;
+  min-height: 4842px;
 }
 
 .header__navigation {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .header__navigation .header__navigation--icon-burger {
-  position: relative;
-  padding-top: 12vw;
-  padding-bottom: 12vw;
+  padding-top: 12vh;
+  padding-bottom: 12vh;
   padding-left: 4.75vw;
 }
 .header__navigation .header__navigation--logo-header {
-  position: relative;
   color: #a87b62;
-  padding-top: 6.25vw;
+  padding-top: 6.25vh;
   padding-right: 29.5vw;
-  padding-bottom: 6.25vw;
+  padding-bottom: 6.25vh;
   padding-left: 29.5vw;
 }
 .header__navigation .header__navigation--icon-market {
-  position: relative;
-  padding-top: 12vw;
+  padding-top: 12vh;
   padding-right: 4.75vw;
-  padding-bottom: 12vw;
+  padding-bottom: 12vh;
 }
 
 .main {
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .main .main__logo {
-  position: relative;
   display: flex;
+  position: relative;
   background-image: url(/images/main/logo-main.jpg);
   background-size: cover;
   background: linear-gradient(rgba(86, 64, 52, 0.7));
   background-position: center;
 }
 .main .main__logo img {
-  position: relative;
   width: 100%;
   height: 100%;
 }
@@ -76,7 +70,6 @@ body {
   max-width: 240px;
   height: 100%;
   max-height: 25px;
-  position: relative;
   font-family: "Cormorant Garamond", serif;
   font-weight: 500;
   font-style: normal;
@@ -85,7 +78,6 @@ body {
   letter-spacing: 0.75px;
 }
 .main .main__logo .main__logo--text p {
-  position: relative;
   width: 100%;
   max-width: 205px;
   height: 100%;
@@ -99,7 +91,6 @@ body {
   white-space: nowrap;
 }
 .main .main__newin {
-  position: relative;
   width: 100%;
   height: 100%;
   display: flex;
@@ -108,7 +99,6 @@ body {
   align-items: center;
 }
 .main .main__newin .main__newin--container {
-  position: relative;
   width: 100%;
   height: 100%;
   display: flex;
@@ -117,7 +107,6 @@ body {
   align-items: center;
 }
 .main .main__newin .main__newin--line {
-  position: relative;
   width: 100%;
   height: 100%;
   max-width: 80px;
@@ -125,8 +114,7 @@ body {
   background-color: #a87b62; /* Цвет линии */
   margin: 10px 0px;
 }
-.main .main__newin .main__cards_container {
-  position: relative;
+.main .main__newin .main__cards-container {
   width: 100%;
   height: 100%;
   display: flex;
@@ -134,19 +122,19 @@ body {
   justify-content: center;
   align-items: center;
 }
-.main .main__newin .main__card_container--leftblock {
+.main .main__newin .main__cards-container--leftblock {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.main .main__newin .main__card_container--rightblock {
+.main .main__newin .main__cards-container--rightblock {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.main .main__newin .main__card_container--leftblock p {
+.main .main__newin .main__cards-container--leftblock p {
   margin-top: 20px;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -155,7 +143,7 @@ body {
   line-height: 20.8px;
   text-align: center;
 }
-.main .main__newin .main__card_container--rightblock p {
+.main .main__newin .main__cards-container--rightblock p {
   margin-top: 20px;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -167,9 +155,8 @@ body {
 .main .main__newin img {
   display: flex;
   flex-direction: column;
-  position: relative;
   width: 100%;
   height: 100%;
   max-width: 130px;
   max-height: 136px;
-}/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=main.css.map */
