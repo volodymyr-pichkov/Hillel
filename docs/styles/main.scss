@@ -111,7 +111,6 @@
       justify-content: $justify-center;
       align-items: $align-center;
 
-
       h2 {
         font-family: $font-cormorant;
         font-size: 34px;
@@ -144,7 +143,7 @@
       align-items: $align-start;
       gap: 9vw;
       margin-top: 40px;
-      
+
       img {
         display: $flexbox;
         flex-direction: column;
@@ -199,6 +198,48 @@
       span {
         letter-spacing: 0;
         margin-right: 3vw;
+      }
+    }
+  }
+
+  .main__blog {
+    width: $width-100;
+    height: $height-100;
+    display: $flexbox;
+    flex-direction: column;
+    justify-content: $justify-center;
+    align-items: $align-center;
+    margin: 70px 15px;
+    color: $color-black;
+
+    .main__blog--container {
+      width: $width-100;
+      height: $height-100;
+      display: $flexbox;
+      flex-direction: column;
+      justify-content: $justify-center;
+      align-items: $align-center;
+
+      h2 {
+        font-family: $font-cormorant;
+        font-size: 34px;
+        line-height: 44.2px;
+        text-align: center;
+        margin: 0px 107px;
+      }
+
+      p {
+        @include text-style-poppins;
+        margin: 35px 7px 10px 6px;
+      }
+    
+
+      .main__blog--line {
+      width: $width-100;
+      height: $height-100;
+      max-width: 80px;
+      height: 1px; /* Толщина линии */
+      background-color: #a87b62; /* Цвет линии */
       }
     }
   }
