@@ -125,12 +125,15 @@ body {
   margin: 35px 7px 10px 6px;
 }
 .main .main__newin .main__newin--line {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
   max-width: 80px;
   height: 1px; /* Толщина линии */
   background-color: #a87b62; /* Цвет линии */
-  margin: 0px 6px 0px 7px;
 }
 .main .main__newin .main__newin-cards-container {
   width: 100%;
@@ -208,9 +211,9 @@ body {
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   margin: 70px 15px;
   color: #1d1613;
 }
@@ -222,7 +225,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-.main .main__blog .main__blog--container h2 {
+.main .main__blog .main__blog--container h3 {
   font-family: "Cormorant Garamond", serif;
   font-size: 34px;
   line-height: 44.2px;
@@ -239,9 +242,13 @@ body {
   margin: 35px 7px 10px 6px;
 }
 .main .main__blog .main__blog--container .main__blog--line {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
-  max-width: 80px;
+  max-width: 64px;
   height: 1px; /* Толщина линии */
   background-color: #a87b62; /* Цвет линии */
 }/*# sourceMappingURL=main.css.map */

@@ -126,12 +126,15 @@
     }
 
     .main__newin--line {
+      display: $flexbox;
+      flex-direction: column;
+      justify-content: $justify-center;
+      align-items: $align-center;
       width: $width-100;
       height: $height-100;
       max-width: 80px;
       height: 1px; /* Толщина линии */
       background-color: #a87b62; /* Цвет линии */
-      margin: 0px 6px 0px 7px;
     }
 
     .main__newin-cards-container {
@@ -206,9 +209,9 @@
     width: $width-100;
     height: $height-100;
     display: $flexbox;
-    flex-direction: column;
     justify-content: $justify-center;
     align-items: $align-center;
+    flex-direction: column;
     margin: 70px 15px;
     color: $color-black;
 
@@ -220,7 +223,7 @@
       justify-content: $justify-center;
       align-items: $align-center;
 
-      h2 {
+      h3 {
         font-family: $font-cormorant;
         font-size: 34px;
         line-height: 44.2px;
@@ -235,12 +238,17 @@
     
 
       .main__blog--line {
+      display: $flexbox;
+      flex-direction: column;
+      justify-content: $justify-center;
+      align-items: $align-center;
       width: $width-100;
       height: $height-100;
-      max-width: 80px;
+      max-width: 64px;
       height: 1px; /* Толщина линии */
       background-color: #a87b62; /* Цвет линии */
       }
+
     }
   }
 }
