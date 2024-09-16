@@ -119,56 +119,86 @@
       margin: 10px 0px;
     }
 
-    .main__cards-container {
-      // БЭМ чек
+    .main__newin-cards-container {
       width: $width-100;
       height: $height-100;
       display: $flexbox;
       flex-direction: row;
       justify-content: $justify-center;
-      align-items: $align-center;
-    }
-
-    .main__cards-container--leftblock {
-      display: $flexbox;
-      flex-direction: column;
-      justify-content: $justify-center;
-      align-items: $align-center;
-    }
-    .main__cards-container--rightblock {
-      display: $flexbox;
-      flex-direction: column;
-      justify-content: $justify-center;
-      align-items: $align-center;
-    }
-
-    .main__cards-container--leftblock p {
+      align-items: $align-start;
+      gap: 9vw;
       margin-top: 20px;
+      
+      img {
+        display: $flexbox;
+        flex-direction: column;
+        width: $width-100;
+        height: $height-100;
+        max-width: 130px;
+        max-height: 136px;
+      }
+
+      .main__newin-cards-container--leftblock {
+        width: $width-100;
+        height: $height-100;
+        display: $flexbox;
+        flex-direction: column;
+        justify-content: $justify-center;
+        align-items: $align-center;
+
+        p {
+          font-family: $font-poppins;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 20.8px;
+          font-style: normal;
+          text-align: $text-center;
+          margin-top: 15px;
+
+          span {
+            font-weight: 700;
+          }
+        }
+      }
+
+      .main__newin-cards-container--rightblock {
+        width: $width-100;
+        height: $height-100;
+        display: $flexbox;
+        flex-direction: column;
+        justify-content: $justify-center;
+        align-items: $align-center;
+
+        p {
+          font-family: $font-poppins;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 20.8px;
+          font-style: normal;
+          text-align: $text-center;
+          margin-top: 15px;
+
+          span {
+            font-weight: 700;
+          }
+        }
+      }
+    }
+
+    .main__newin-text-scroll {
       font-family: $font-poppins;
-      font-weight: 500;
       font-style: normal;
-      font-size: 16px;
+      font-weight: 600;
+      font-size: 5vw;
       line-height: 20.8px;
       text-align: $text-center;
-    }
+      color: $color-black;
+      margin-top: 40px;
 
-    .main__cards-container--rightblock p {
-      margin-top: 20px;
-      font-family: $font-poppins;
-      font-weight: 500;
-      font-style: normal;
-      font-size: 16px;
-      line-height: 20.8px;
-      text-align: $text-center;
-    }
-
-    img {
-      display: $flexbox;
-      flex-direction: column;
-      width: $width-100;
-      height: $height-100;
-      max-width: 130px;
-      max-height: 136px;
+      span {
+        letter-spacing: 0;
+        margin-right: 3vw;
+      }
     }
   }
 }
