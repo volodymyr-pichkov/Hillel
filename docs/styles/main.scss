@@ -1,8 +1,7 @@
-// ЗАМЕНИ IMPORT НА USE + FORWARD
-@import "variables";
-@import "mixins";
-@import "base";
-@import "components/card";
+@use "variables";
+@use "mixins";
+@use "base";
+@use "components/card";
 
 * {
   // outline: 2px solid black !important;
@@ -42,13 +41,10 @@
 
   .main__logo {
     display: $flexbox;
-    position: $pos-rel;
-    background-image: url(/images/main/logo-main.jpg);
-    background-size: cover;
-    background: linear-gradient(rgba(86, 64, 52, 0.7));
-    background-position: center;
+    background: linear-gradient(#564034b2);
 
     img {
+      position: $pos-rel;
       width: $width-100;
       height: $height-100;
     }
@@ -60,7 +56,7 @@
       align-items: flex-end;
       width: $width-100;
       height: $height-100;
-      padding: 62.5% 12.5%; // ЗАПИСЬ ВЕРНА???
+      padding: 62% 12%;
       position: $pos-abs; // ЧЕК ПО РЕСПОНСИВУ!!!
       text-align: $text-center;
       color: $color-white;
@@ -236,20 +232,66 @@
         @include text-style-poppins;
         margin: 35px 7px 10px 6px;
       }
-    
 
       .main__blog--line {
+        display: $flexbox;
+        flex-direction: column;
+        justify-content: $justify-center;
+        align-items: $align-center;
+        width: $width-100;
+        height: $height-100;
+        max-width: 80px;
+        height: 1px; /* Толщина линии */
+        background-color: #a87b62; /* Цвет линии */
+      }
+    }
+
+    img {
+      width: $width-100;
+      height: $height-100;
+      margin-top: 15vh;
+    }
+
+    .main__sub-blog--card {
       display: $flexbox;
       flex-direction: column;
       justify-content: $justify-center;
       align-items: $align-center;
       width: $width-100;
       height: $height-100;
-      max-width: 64px;
-      height: 1px; /* Толщина линии */
-      background-color: #a87b62; /* Цвет линии */
+      text-align: $text-center;
+      background-color: #f0eae4;
+
+      time {
+        color: #9b9997;
+        margin-top: 15vh;
       }
 
+      h2 {
+        font-family: $font-cormorant;
+        font-size: 34px;
+        line-height: 44.2px;
+        text-align: center;
+        margin: 8vh 20vw;
+      }
+
+      p {
+        @include text-style-poppins;
+        margin: 15vh 30vw 3vh 30vw;  
+      }
+
+      .main__sub-blog--line {
+        display: $flexbox;
+        flex-direction: column;
+        justify-content: $justify-center;
+        align-items: $align-center;
+        width: $width-100;
+        height: $height-100;
+        max-width: 80px;
+        height: 1px; /* Толщина линии */
+        background-color: #a87b62; /* Цвет линии */
+        margin-bottom: 15vh;
+      }
     }
   }
 }
