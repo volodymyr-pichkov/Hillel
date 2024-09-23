@@ -34,14 +34,8 @@
       rel="stylesheet"
     />
 
-    <!-- <style>
-      * {
-        outline: 1px solid black;
-      }
-    </style> -->
-
   </head>
-  <body class="m-0 p-0 box-border w-full h-full min-w-[320px]">
+  <body class="m-0 p-0 box-border w-full h-full min-w-[323px]"> <!--Применил 323px потому что не знаю почему белая полоса справа при скролле и шириной 320px-->
     <header class="header">
       <nav class="header__navigation flex justify-center items-center">
         <img
@@ -50,7 +44,7 @@
           class="header__navigation--icon-burger pt-[38px] pb-[38px] pl-[15px]"
         />
         <img
-          src="images/header/logo-header.png"
+          src="images/header/logo-header.svg"
           alt="logo"
           class="header__navigation--logo-header text-line_brown pt-[20px] pb-[20px] pl-[94px] pr-[101px]"
         />
@@ -368,45 +362,46 @@
     </main>
 
     <footer class="bg-black text-white p-6">
-  <!-- Newsletter Section -->
+
   <div class="max-w-md mx-auto text-center mb-12">
     <h2 class="text-3xl font-serif mb-4 leading-snug">The good stuff<br>in your inbox</h2>
     <p class="text-sm text-gray-400 mb-6">News and updates from CH. No spam, we promise.</p>
-    <form class="flex justify-center items-center space-x-4">
-      <input type="email" class="p-3 w-64 bg-transparent border-b-2 border-white text-white placeholder-gray-500 focus:outline-none" placeholder="Your E-mail">
-      <button type="submit" class="flex items-center space-x-2 text-white border-b-2 border-white hover:text-gray-400 hover:border-gray-400 transition duration-300">
-        <span>Sign Up</span>
-        <span>&rarr;</span>
+    <form class="flex justify-center items-center">
+      <input type="email" class="w-64 font-medium bg-transparent border-b-[1px] pb-2 border-white text-white placeholder-gray-500 focus:outline-none" placeholder="Your E-mail">
+      <button type="submit" class="flex items-center space-x-2 text-white border-b-[1px] border-white hover:text-gray-400 hover:border-gray-400 transition duration-300">
+        <span class="whitespace-nowrap font-medium pb-2">Sign Up</span>
+        <span class="w-7">&rarr;</span>
       </button>
     </form>
   </div>
 
-  <!-- Links Section -->
-  <div class="text-center mb-12">
-    <ul class="space-y-3 text-sm">
-      <li><a href="#" class="hover:text-gray-400 transition duration-300">Ordering & Payment</a></li>
-      <li><a href="#" class="hover:text-gray-400 transition duration-300">Terms & Conditions</a></li>
-      <li><a href="#" class="hover:text-gray-400 transition duration-300">Returns & Exchanges</a></li>
-      <li><a href="#" class="hover:text-gray-400 transition duration-300">Delivery</a></li>
-      <li><a href="#" class="hover:text-gray-400 transition duration-300">About CH</a></li>
-      <li><a href="#" class="hover:text-gray-400 transition duration-300">Stores & Hours</a></li>
-      <li><a href="#" class="hover:text-gray-400 transition duration-300">Jobs</a></li>
-      <li><a href="#" class="hover:text-gray-400 transition duration-300">Contact Us</a></li>
+  <div class="ml-[15px] mb-12">
+    <ul class="space-y-8 text-sm">
+      <li><a href="#">Ordering & Payment</a></li>
+      <li><a href="#">Terms & Conditions</a></li>
+      <li><a href="#">Returns & Exchanges</a></li>
+      <li><a href="#">Delivery</a></li>
+    </ul>
+    <ul class="space-y-8 text-sm mt-12">
+      <li><a href="#">About CH</a></li>
+      <li><a href="#">Stores & Hours</a></li>
+      <li><a href="#">Jobs</a></li>
+      <li><a href="#">Contact Us</a></li>
     </ul>
   </div>
     
-      <div class="flex justify-center space-x-4 mt-8">
+      <div class="flex items-center space-x-8 mt-8 ml-[15px]">
         <a href="#" class="">
-
+          <img src="images/main/icons/icon-facebook.svg" alt="facebook">
         </a>
         <a href="#" class="">
-
+          <img src="images/main/icons/icon-instagram.svg" alt="instagram">
         </a>
         <a href="#" class="">
-
+          <img src="images/main/icons/icon-pinterest.svg" alt="pinterest">
         </a>
         <a href="#" class="">
-
+          <img src="images/main/icons/icon-twitter.svg" alt="twitter">
         </a>
       </div>
     </footer>

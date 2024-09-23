@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catalog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              line_brown: "#a87b62",
+              blog_font: "#f0eae4",
+              time_gray: "#9b9997",
+              questions_black: "1d1613",
+            },
+            fontFamily: {
+              cormorant: ["Cormorant Garamond", "serif"],
+              poppins: ["Poppins", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="m-0 p-0 box-border w-full h-full min-w-[323px]">
+    <header class="header">
+      <nav class="header__navigation flex justify-center items-center">
+        <img
+          src="../images/header/icon-burger.svg"
+          alt="menu"
+          class="header__navigation--icon-burger pt-[38px] pb-[38px] pl-[15px]"
+        />
+        <img
+          src="../images/header/logo-header.svg"
+          alt="logo"
+          class="header__navigation--logo-header text-line_brown pt-[20px] pb-[20px] pl-[94px] pr-[101px]"
+        />
+        <img
+          src="../images/header/icon-market.svg"
+          alt="market"
+          class="header__navigation--icon-market pt-[38px] pr-[15px] pb-[38px]"
+        />
+      </nav>
+    </header>
+
+    <main class="main">   
+
+      <!--LOGO-->
+      <section class="main__logo flex w-full h-full">
+        <img
+          src="../images/main/logo-catalog.jpg"
+          alt="jewellery logo"
+          class="w-full h-full flex flex-col justify-center items-center text-center relative"
+        />
+        <div
+          class="main__logo--text flex flex-col justify-center items-center text-white text-center absolute inset-0"
+        >
+          <h2
+            class="font-cormorant tracking-wider font-medium not-italic text-4xl leading-normal"
+          >
+            ALL JEWELLERY
+          </h2>
+          <p
+            class="max-w-[247px] max-h-[41px] font-cormorant leading-relaxed font-light italic text-[22px] text-center text-wrap"
+          >
+            Discover picks of fashion's finest trends in our jewellery catalog
+          </p>
+        </div>
+        </div>
+      </section>
+
+      <section class="main__catalog flex w-full h-full pl-4 pr-4">
+        <div class="grid grid-cols-6 gap-4 mt-[40px] mb-[50px] ml-[15px] mr-[15px]">
+            <!-- Левая сторона -->
+            <div class="main__catalog-cards-container w-full h-full flex flex-row justify-center items-start col-span-3 ">
+                <div class="grid grid-rows-6 gap-4">
+                    <div class="flex flex-col justify-center items-center text-center">
+                    <img src="../images/main/cards/double-pearl-earrings.jpg" alt="" class="w-full h-auto">
+                    <p>Double pearl
+                        earrings</p>
+                    </div>
+                    <div >
+                    <img src="../images/main/cards/gold-layered-necklace.jpg" alt="" class="w-full h-auto">
+                    <p>Gold layered
+                        necklace</p>
+                </div>
+                    <div class="flex flex-col justify-center items-center text-center">
+                    <img src="../images/main/cards/boho-earrings.jpg" alt="" class="w-full h-auto">
+                    <p>Boho earrings</p>
+                </div>
+                    <div class="flex flex-col justify-center items-center text-center">
+                    <img src="../images/main/cards/black-leather-choker-necklace.jpg" alt="" class="w-full h-auto">
+                    <p>Black leather
+                        choker</p>
+                </div>
+                    <div class="flex flex-col justify-center items-center text-center">
+                    <img src="../images/main/cards/elephant-earrings.jpg" alt="" class="w-full h-auto">
+                    <p>Black leather
+                        choker</p>
+                </div>
+                    <div class="flex flex-col justify-center items-center text-center">
+                    <img src="../images/main/cards/origami-crane-necklace.jpg" alt="" class="w-full h-auto">
+                    <p>Origami crane
+                        necklace</p>
+                </div>
+                </div>
+            </div>
+    
+            <!-- Правая сторона -->
+            <div class="main__catalog-cards-container w-full h-full flex flex-row justify-center items-start col-span-3">
+                <div class="grid grid-rows-6 gap-4">
+                    <div class="flex flex-col justify-center items-center text-center">
+                    <img src="../images/main/cards/black-choker-gold-bead.jpg" alt="" class="w-full h-auto">
+                    <p> Choker with
+                        gold bead</p>
+                    </div>
+                    <div class="flex flex-col justify-center items-center text-center">
+                    <img src="../images/main/cards/blue-gemstone-pendant.jpg" alt="" class="w-full h-auto">
+                    <p> Blue gemstone
+                        pendant</p>
+                    </div>
+                    <div class="flex flex-col justify-center items-center text-center">
+                    <img src="../images/main/cards/bird-necklace.jpg" alt="" class="w-full h-auto">
+                    <p> Gold bird
+                        necklace</p>
+                    </div>
+                    <div class="flex flex-col justify-center items-center text-center">
+                    <img src="../images/main/cards/purple-gemstone-necklace.jpg" alt="I" class="w-full h-auto">
+                    <p> Necklace with
+                        amethyst</p>
+                    </div>
+                    <div class="flex flex-col justify-center items-center text-center">
+                    <img src="../images/main/cards/threader-necklace-closeup.jpg" alt="I" class="w-full h-auto">
+                    <p> Threader
+                        necklace</p>
+                    </div>
+                    <div class="flex flex-col justify-center items-center text-center">
+                    <img src="../images/main/cards/marble-earrings.jpg" alt="I" class="w-full h-auto">
+                    <p> Marble earrings</p>
+                    </div>
+                </div>
+            </div>
+      </section>
+
+    </main>
+
+    <footer class="bg-black text-white p-6">
+      <div class="max-w-md mx-auto text-center mb-12">
+        <h2 class="text-3xl font-serif mb-4 leading-snug">
+          The good stuff<br />in your inbox
+        </h2>
+        <p class="text-sm text-gray-400 mb-6">
+          News and updates from CH. No spam, we promise.
+        </p>
+        <form class="flex justify-center items-center">
+          <input
+            type="email"
+            class="w-64 font-medium bg-transparent border-b-[1px] pb-2 border-white text-white placeholder-gray-500 focus:outline-none"
+            placeholder="Your E-mail"
+          />
+          <button
+            type="submit"
+            class="flex items-center space-x-2 text-white border-b-[1px] border-white hover:text-gray-400 hover:border-gray-400 transition duration-300"
+          >
+            <span class="whitespace-nowrap font-medium pb-2">Sign Up</span>
+            <span class="w-7">&rarr;</span>
+          </button>
+        </form>
+      </div>
+
+      <div class="ml-[15px] mb-12">
+        <ul class="space-y-8 text-sm">
+          <li><a href="#">Ordering & Payment</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Returns & Exchanges</a></li>
+          <li><a href="#">Delivery</a></li>
+        </ul>
+        <ul class="space-y-8 text-sm mt-12">
+          <li><a href="#">About CH</a></li>
+          <li><a href="#">Stores & Hours</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="flex items-center space-x-8 mt-8 ml-[15px]">
+        <a href="#" class="">
+          <img src="../images/main/icons/icon-facebook.svg" alt="facebook" />
+        </a>
+        <a href="#" class="">
+          <img src="../images/main/icons/icon-instagram.svg" alt="instagram" />
+        </a>
+        <a href="#" class="">
+          <img src="../images/main/icons/icon-pinterest.svg" alt="pinterest" />
+        </a>
+        <a href="#" class="">
+          <img src="../images/main/icons/icon-twitter.svg" alt="twitter" />
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
