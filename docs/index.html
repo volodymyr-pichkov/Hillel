@@ -10,9 +10,10 @@
         theme: {
           extend: {
             colors: {
-              brown_line: "#a87b62",
+              line_brown: "#a87b62",
               blog_font: "#f0eae4",
-              grey: "#9b9997",
+              time_gray: "#9b9997",
+              questions_black: "1d1613",
             },
             fontFamily: {
               cormorant: ["Cormorant Garamond", "serif"],
@@ -40,7 +41,7 @@
     </style> -->
 
   </head>
-  <body class="m-0 p-0 box-border">
+  <body class="m-0 p-0 box-border w-full h-full min-w-[320px]">
     <header class="header">
       <nav class="header__navigation flex justify-center items-center">
         <img
@@ -51,7 +52,7 @@
         <img
           src="images/header/logo-header.png"
           alt="logo"
-          class="header__navigation--logo-header text-brown_line pt-[20px] pb-[20px] pl-[94px] pr-[101px]"
+          class="header__navigation--logo-header text-line_brown pt-[20px] pb-[20px] pl-[94px] pr-[101px]"
         />
         <img
           src="images/header/icon-market.svg"
@@ -62,11 +63,14 @@
     </header>
 
     <main class="main flex flex-col justify-center items-center">
-      <section class="main__logo flex w-full h-full">
+
+      <!--LOGO-->
+      <section
+      class="main__logo flex w-full h-full">
         <img
           src="images/main/logo-main.jpg"
           alt="jewellery logo"
-          class="w-full h-full min-w-[323px] flex flex-col justify-center items-center text-center relative"
+          class="w-full h-full flex flex-col justify-center items-center text-center relative"
         />
         <div
           class="main__logo--text flex flex-col justify-center items-center text-white text-center absolute inset-0"
@@ -83,9 +87,9 @@
           </p>
         </div>
       </section>
-
-      <section
-        class="main__newin my-[70px] mx-[15px] w-full h-full flex flex-col justify-center items-center text-black"
+      <!--NEWIN-->
+      <section 
+      class="main__newin my-[70px] mx-4 w-full h-full flex flex-col justify-center items-center text-black"
       >
         <div
           class="main__newin--container gap-x-[30px] mt-[40px] w-full h-full flex flex-col justify-center items-center"
@@ -101,7 +105,7 @@
             Shop Now
           </p>
           <div
-            class="main__newin--line mb-10 bg-brown_line flex flex-col justify-center items-center w-full h-full max-w-[80px] h-px"
+            class="main__newin--line mb-10 bg-line_brown flex flex-col justify-center items-center w-full h-full max-w-[80px] h-px"
           ></div>
         </div>
 
@@ -156,9 +160,9 @@
           6
         </p>
       </section>
-
-      <section
-        class="main__blog my-[70px] mx-[15px] w-full h-full flex justify-center items-center flex-col text-black"
+      <!--BLOG-->
+      <section 
+      class="main__blog my-0 mx-4 w-full h-full flex justify-center items-center flex-col text-black"
       >
         <div
           class="main__blog--container w-full h-full flex flex-col justify-center items-center"
@@ -174,38 +178,239 @@
             Read All
           </p>
           <div
-            class="main__blog--line bg-brown_line flex flex-col justify-center items-center w-full h-full max-w-[80px] h-px"
+            class="main__blog--line bg-line_brown flex flex-col justify-center items-center w-full h-full max-w-[80px] h-px"
           ></div>
         </div>
 
         <img
-          src="images/main/logo-blog.jpg"
+          src="images/main/image-blog.jpg"
           alt="jewellery blog logo"
-          class="mt-[50px] flex flex-col justify-center items-center w-full h-full text-center bg-white"
+          class="mt-[70px] flex flex-col justify-center items-center w-full h-full text-center bg-white"
         />
 
         <div
           class="main__sub-blog--card bg-blog_font flex flex-col justify-center items-center w-full h-full"
         >
-          <time datetime="2019-09-30" class="text-grey mt-[50px] ml-[11px] mr-[10px] font-poppins text-center text-sm	leading-4"
+          <time
+            datetime="2019-09-30"
+            class="text-grey mt-[50px] ml-[11px] mr-[10px] font-poppins text-center text-sm leading-4"
             >September 30, 2019</time
           >
           <h2
-            class="font-cormorant text-[26px] leading-[33.8px] mt-[25px] mb-[50px] mx-[20vw] not-italic text-black font-bold text-center"
+            class="font-cormorant text-[26px] leading-[33.8px] mt-[25px] mb-[50px] mx-[20%] not-italic text-black font-bold text-center"
           >
             How to care for your jewellery
           </h2>
           <p
-            class="font-poppins text-base mr-[30vw] mb-[3vh] ml-[30vw] font-medium text-center font-medium leading-5"
+            class="font-poppins text-base mr-[30%] mb-[3%] ml-[30%] font-medium text-center font-medium leading-5"
           >
             Read Article
           </p>
 
           <div
-            class="main__sub-blog--line bg-brown_line flex flex-col justify-center items-center w-full h-full max-w-[80px] h-px mb-[49px]"
+            class="main__sub-blog--line bg-line_brown flex flex-col justify-center items-center w-full h-full max-w-[80px] h-px mb-[49px]"
           ></div>
         </div>
+
+        <div
+        class="main__crystals my-0 mt-[40px] mx-4 w-full h-full flex justify-center items-center flex-col text-black"
+      >
+        <img
+          src="images/main/image-crystals.jpg"
+          alt="crystals"
+          class="mt-0 flex flex-col justify-center items-center w-full h-full text-center bg-white"
+        />
+
+        <div
+          class="main__crystals-blog--card bg-blog_font flex flex-col justify-center items-center w-full h-full"
+        >
+          <time
+            datetime="2019-09-23"
+            class="text-grey mt-[50px] ml-[11px] mr-[10px] font-poppins text-center text-sm leading-4"
+            >September 23, 2019</time
+          >
+          <h2
+            class="font-cormorant text-[26px] leading-[33.8px] mt-[25px] mb-[50px] mx-[20%] not-italic text-black font-bold text-center"
+          >
+            Power of crystals
+          </h2>
+          <p
+            class="font-poppins text-base mr-[30%] mb-[3%] ml-[30%] font-medium text-center font-medium leading-5"
+          >
+            Read Article
+          </p>
+
+          <div
+            class="main__crystals-blog--line bg-line_brown flex flex-col justify-center items-center w-full h-full max-w-[80px] h-px mb-[49px]"
+          ></div>
+        </div>
+      </div>
+
+      <div
+      class="main__trends= mt-[40px] m-4 w-full h-full flex justify-center items-center flex-col text-black"
+    >
+      <img
+        src="images/main/image-trends.jpg"
+        alt="trends"
+        class="mt-0 flex flex-col justify-center items-center w-full h-full text-center bg-white"
+      />
+
+      <div
+        class="main__trends-blog--card bg-blog_font flex flex-col justify-center items-center w-full h-full"
+      >
+        <time
+          datetime="2019-09-16"
+          class="text-grey mt-[50px] ml-[11px] mr-[10px] font-poppins text-center text-sm leading-4"
+          >September 16, 2019</time
+        >
+        <h2
+          class="font-cormorant text-[26px] leading-[33.8px] mt-[25px] mb-[50px] mx-[20%] not-italic text-black font-bold text-center"
+        >
+          AW 19 trends
+        </h2>
+        <p
+          class="font-poppins text-base mr-[30%] mb-[3%] ml-[30%] font-medium text-center font-medium leading-5"
+        >
+          Read Article
+        </p>
+
+        <div
+          class="main__trends-blog--line bg-line_brown flex flex-col justify-center items-center w-full h-full max-w-[80px] h-px mb-[49px]"
+        ></div>
+      </div>
+    </div>
       </section>
+      <!--QUESTIONS-->
+      <section 
+      class="main__questions mx-auto">
+        <h3 class="text-center text-questions_black font-cormorant text-[34px] font-bold mx-auto">
+          Frequently asked questions
+        </h3>
+        
+        <div class="main__questions-tab max-w-[290px] max-h-[441px] mx-auto mt-[40px]">
+
+          <div class="bg-white border-[1px] border-[#a87b62]">
+
+              <details open class="border-b border-[#a87b62]">
+                  <summary class="cursor-pointer p-4 focus:outline-none font-medium">What materials are
+                    the jewellery made of?</summary>
+              <div class="p-4">
+                      <p>Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
+              </div>
+              </details>
+
+              <details class="border-b border-[#a87b62]">
+                  <summary class="cursor-pointer p-4 focus:outline-none font-medium">Which countries 
+                    do you deliver to?</summary>
+              <div class="p-4">
+              </div>                  
+              </details>
+
+              <details class="border-b border-[#a87b62]">
+                  <summary class="cursor-pointer p-4 focus:outline-none font-medium">What are the 
+                    payment methods?</summary>
+              <div class="p-4">
+              </div>
+              </details>
+
+              <details>
+                  <summary class="cursor-pointer p-4 focus:outline-none font-medium">Can I return the 
+                    jewellery if it didn’t fit me?</summary>
+              <div class="p-4">
+                  </div>
+              </details>
+            </div>
+          </div>
+
+      </section>
+      <!--FOLLOW US-->
+      <section class="main__follow w-full h-full">
+        <div
+        class="main__follow--container w-full h-full flex flex-col justify-center items-center mt-[70px]"
+      >
+        <h3
+          class="font-cormorant font-medium text-[34px] my-[0px] mx-[107px] leading-10 text-center"
+        >
+        @Chjewellery
+        </h3>
+        <p
+          class="font-poppins text-base mt-[35px] mr-[7px] mb-[10px] ml-[6px] not-italic text-center font-medium leading-5"
+        >
+          Follow Us
+        </p>
+        <div
+          class="main__blog--line bg-line_brown flex flex-col justify-center items-center w-full h-full max-w-[80px] h-px"
+        ></div>
+      </div>
+
+      <div class="main__follow--collage grid grid-cols-2 mt-[46px] mb-[71px] mr-0 ml-0">
+        <div class="flex flex-col justify-center items-center gap-4 max-w-[290px] mah-h-[361px]">
+            <div class="relative w-[133px] min-h-[133px]">
+                <img src="images/main/image-earrings.jpg" alt="earrings" class="object-cover" />
+            </div>
+            <div class="relative w-[133px] min-h-[87px]">
+                <img src="images/main/image-stones.jpg" alt="stones" class="object-cover" />
+            </div>
+            <div class="relative w-[133px] min-h-[87px]">
+                <img src="images/main/image-necklace.jpg" alt="necklace" class="object-cover" />
+            </div>
+        </div>
+        <div class="flex flex-col justify-center items-center gap-4">
+            <div class="relative w-[133px] min-h-[247px]">
+                <img src="images/main/image-girl.jpg" alt="girl" class="object-cover" />
+            </div>
+            <div class="relative w-[133px] min-h-[87px]">
+                <img src="images/main/image-hands.jpg" alt="hands" class="object-cover" />
+            </div>
+        </div>
+      </section>
+
     </main>
+
+    <footer class="bg-black text-white p-6">
+  <!-- Newsletter Section -->
+  <div class="max-w-md mx-auto text-center mb-12">
+    <h2 class="text-3xl font-serif mb-4 leading-snug">The good stuff<br>in your inbox</h2>
+    <p class="text-sm text-gray-400 mb-6">News and updates from CH. No spam, we promise.</p>
+    <form class="flex justify-center items-center space-x-4">
+      <input type="email" class="p-3 w-64 bg-transparent border-b-2 border-white text-white placeholder-gray-500 focus:outline-none" placeholder="Your E-mail">
+      <button type="submit" class="flex items-center space-x-2 text-white border-b-2 border-white hover:text-gray-400 hover:border-gray-400 transition duration-300">
+        <span>Sign Up</span>
+        <span>&rarr;</span>
+      </button>
+    </form>
+  </div>
+
+  <!-- Links Section -->
+  <div class="text-center mb-12">
+    <ul class="space-y-3 text-sm">
+      <li><a href="#" class="hover:text-gray-400 transition duration-300">Ordering & Payment</a></li>
+      <li><a href="#" class="hover:text-gray-400 transition duration-300">Terms & Conditions</a></li>
+      <li><a href="#" class="hover:text-gray-400 transition duration-300">Returns & Exchanges</a></li>
+      <li><a href="#" class="hover:text-gray-400 transition duration-300">Delivery</a></li>
+      <li><a href="#" class="hover:text-gray-400 transition duration-300">About CH</a></li>
+      <li><a href="#" class="hover:text-gray-400 transition duration-300">Stores & Hours</a></li>
+      <li><a href="#" class="hover:text-gray-400 transition duration-300">Jobs</a></li>
+      <li><a href="#" class="hover:text-gray-400 transition duration-300">Contact Us</a></li>
+    </ul>
+  </div>
+    
+      <div class="flex justify-center space-x-4 mt-8">
+        <a href="#" class="">
+
+        </a>
+        <a href="#" class="">
+
+        </a>
+        <a href="#" class="">
+
+        </a>
+        <a href="#" class="">
+
+        </a>
+      </div>
+    </footer>
+    
+
   </body>
 </html>
