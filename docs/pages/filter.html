@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              line_brown: "#a87b62",
+              blog_font: "#f0eae4",
+              time_gray: "#9b9997",
+              questions_black: "1d1613",
+            },
+            fontFamily: {
+              cormorant: ["Cormorant Garamond", "serif"],
+              poppins: ["Poppins", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <section 
+    class="main__questions mx-auto">
+      
+      <div class="main__questions-tab max-w-[290px] max-h-[441px] mx-auto mt-[40px]">
+
+        <div class="bg-white border-[1px] border-[#a87b62]">
+
+            <details open class="border-b border-[#a87b62]">
+                <summary class="cursor-pointer p-4 focus:outline-none font-medium">Product</summary>
+            <div class="p-4">
+                <ul class="list-none space-y-6">
+                    <li class="flex items-center">
+                        <span class="w-4 h-4 bg-[#a87b62] mr-2"></span>
+                        Necklaces
+                    </li>
+                    <li class="flex items-center">
+                        <span class="w-4 h-4 bg-[#a87b62] mr-2"></span>
+                        Chokers
+                    </li>
+                    <li class="flex items-center">
+                        <span class="w-4 h-4 bg-white border-[1px] border-[#a87b62] mr-2"></span>
+                        Rings
+                    </li>
+                    <li class="flex items-center">
+                        <span class="w-4 h-4 bg-[#a87b62] mr-2"></span>
+                        Earrings
+                    </li>
+                </ul>
+            </div>
+            </details>
+
+            <details class="border-b border-[#a87b62] ">
+                <summary class="cursor-pointer pl-4 py-8 focus:outline-none font-medium">Material</summary>
+            <div class="p-4">
+            </div>                  
+            </details>
+
+            <details class="border-b border-[#a87b62]">
+                <summary class="cursor-pointer pl-4 py-8 focus:outline-none font-medium">Collection</summary>
+            <div class="p-4">
+            </div>
+            </details>
+
+            <details class="border-b border-[#a87b62]">
+                <summary class="cursor-pointer pl-4 py-8 focus:outline-none font-medium">Price</summary>
+            <div class="p-4">
+                <div
+                class="main__newin--line mb-10 bg-blog_font flex flex-col justify-center items-center w-full h-full max-w-[250px] h-px"
+              ></div>
+                </div>
+            </details>
+          </div>
+          <svg width="300" height="100" xmlns="http://www.w3.org/2000/svg" class="mt-4 mx-4">
+            <rect x="5" y="16" width="230" height="68" fill="#a87b62"/>
+            <text x="120" y="50" font-family="Poppins", "sans-serif" font-size="16" fill="white" text-anchor="middle" alignment-baseline="middle">Apply</text>
+          </svg>
+          <svg width="300" height="100" xmlns="http://www.w3.org/2000/svg" class="my-2 mx-4">
+            <rect x="5" y="16" width="230" height="68" fill="white" stroke="#a87b62"/>
+            <text x="120" y="50" font-family="Poppins", "sans-serif" font-size="16" fill="black" text-anchor="middle" alignment-baseline="middle">Clear All</text>
+          </svg>
+        </div>
+    </section>
+</body>
+</html>
