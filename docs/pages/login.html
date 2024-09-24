@@ -1,11 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-</head>
-<body>
-    
-</body>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              line_brown: "#a87b62",
+              blog_font: "#f0eae4",
+              time_gray: "#9b9997",
+              questions_black: "1d1613",
+            },
+            fontFamily: {
+              cormorant: ["Cormorant Garamond", "serif"],
+              poppins: ["Poppins", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="m-0 p-0 box-border w-full h-full min-w-[323px]">
+    <div class="py-12 px-6">
+      <img
+        src="../images/main/logo-login.jpg"
+        alt="logo login"
+        class="min-w-[270px] min-h-[84px] relative"
+      />
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute top-[65px] left-[266px]">
+        <path d="M7 5.44469L12.4447 0L14 1.55531L8.55531 7L14 12.4447L12.4447 14L7 8.55531L1.55531 14L0 12.4447L5.44469 7L0 1.55531L1.55531 0L7 5.44469Z" fill="#1D1613"/>
+        </svg>
+      <div class="bg-[#f0eae4] w-full max-w-sm p-8">
+        <h2
+          class="font-cormorant text-2xl font-bold text-gray-800 text-center mb-6 leading-8"
+        >
+          Log In
+        </h2>
+        <form action="#" method="POST" class="space-y-2">
+          <div>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your E-mail"
+              required
+              class="mt-1 block w-full px-4 py-2 focus:outline-none bg-[#f0eae4]"
+            />
+          </div>
+          <div
+            class="bg-black flex flex-col justify-center items-center w-full h-full min-w-[220px] h-px"
+          ></div>
+          <div>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Password"
+              required
+              class="mt-1 block w-full px-4 py-2 focus:outline-none bg-[#f0eae4]"
+            />
+          </div>
+          <div
+            class="bg-black flex flex-col justify-center items-center w-full h-full min-w-[220px] h-px"
+          ></div>
+          <div class="flex items-center justify-between">
+            <a href="#" class="text-sm text-[#9b9997] pl-[110px] whitespace-nowrap pb-10"
+              >Forgot password?</a
+            >
+          </div>
+
+          <button
+            type="submit"
+            class="w-full h-auto min-w-[220px] min-h-[68px] bg-[#a87b62] text-white font-bold py-2"
+          >
+            Login
+          </button>
+        </form>
+        <p class="mt-4 text-sm text-[#9b9997] text-center">
+          Don't have an account?
+          <a href="#" class="text-black font-medium">Sign up</a>
+        </p>
+      </div>
+    </div>
+  </body>
 </html>
