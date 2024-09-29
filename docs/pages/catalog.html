@@ -58,24 +58,27 @@
     <main class="main">   
 
       <!--LOGO-->
-      <section class="main__logo flex w-full h-full">
+      <section
+      class="main__logo flex w-full h-auto">
+      <div class="main__logo--image-container relative">
         <img
           src="../images/main/logo-catalog.jpg"
           alt="jewellery logo"
-          class="w-full h-full flex flex-col justify-center items-center text-center relative"
+          class="w-full h-auto object-cover"
         />
         <div
-          class="main__logo--text flex flex-col justify-center items-center text-white text-center absolute inset-0"
+          class="main__logo--text flex flex-col justify-center items-center text-white absolute inset-0"
         >
           <h2
-            class="font-cormorant tracking-wider font-medium not-italic text-4xl leading-normal"
+            class="font-cormorant tracking-wider font-medium not-italic text-4xl leading-normal text-center whitespace-nowrap px-9 pt-24"
           >
-            ALL JEWELLERY
+          ALL JEWELLERY
           </h2>
           <p
-            class="max-w-[247px] max-h-[41px] font-cormorant leading-relaxed font-light italic text-[22px] text-center text-wrap"
+            class="font-cormorant font-light italic text-2xl leading-10 px-9 mt-5 pb-24"
           >
-            Discover picks of fashion's finest trends in our jewellery catalog
+          Discover picks of fashion's finest
+          trends in our jewellery catalog
           </p>
         </div>
         </div>

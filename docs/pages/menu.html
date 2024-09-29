@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Menu</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -33,8 +33,11 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-</head>
-<body class="m-0 p-0 box-border w-full h-full min-w-[323px] overflow-x-hidden bg-[#a87b62]"> <!--Применил 323px потому что не знаю почему белая полоса справа при скролле и шириной 320px-->
+  </head>
+  <body
+    class="m-0 p-0 box-border w-full h-full min-w-[323px] overflow-x-hidden bg-[#a87b62]"
+  >
+    <!--Применил 323px потому что не знаю почему белая полоса справа при скролле и шириной 320px-->
     <header class="header">
       <nav class="header__navigation flex justify-center items-center">
         <img
@@ -54,32 +57,51 @@
         />
       </nav>
     </header>
-    
-        <!-- Search Bar -->
-        <div class="px-4 mt-4">
-            <div class="bg-[#d4b69d] p-2 rounded-3xl flex items-center relative">
-                <input type="text" class="bg-transparent text-white placeholder-white focus:outline-none w-full pl-8">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute">
-                    <path d="M12.6266 11.5128L16 14.8855L14.8855 16L11.5128 12.6266C10.2579 13.6325 8.69706 14.1797 7.08871 14.1774C3.17574 14.1774 0 11.0017 0 7.08871C0 3.17574 3.17574 0 7.08871 0C11.0017 0 14.1774 3.17574 14.1774 7.08871C14.1797 8.69706 13.6325 10.2579 12.6266 11.5128ZM11.0466 10.9284C12.0462 9.90047 12.6044 8.52254 12.6021 7.08871C12.6021 4.04214 10.1345 1.57527 7.08871 1.57527C4.04214 1.57527 1.57527 4.04214 1.57527 7.08871C1.57527 10.1345 4.04214 12.6021 7.08871 12.6021C8.52254 12.6044 9.90047 12.0462 10.9284 11.0466L11.0466 10.9284Z" fill="white"/>
-                </svg>
-            </div>
-        </div>
-    
-        <!-- Menu Items -->
-        <nav class="mt-6 px-4 space-y-4">
-            <a href="#" class="text-white text-lg font-medium block">What’s new</a>
-            <a href="#" class="text-white text-lg font-medium block">Chokers</a>
-            <a href="#" class="text-white text-lg font-medium block">Necklaces</a>
-            <a href="#" class="text-white text-lg font-medium block">Rings</a>
-            <a href="#" class="text-white text-lg font-medium block">Earrings</a>
-        </nav>
-    
-        <!-- Lower Menu Items -->
-        <nav class="mt-8 px-4 space-y-4">
-            <a href="#" class="text-[#ffffffbf] text-lg font-medium block">About CH</a>
-            <a href="#" class="text-[#ffffffbf] text-lg font-medium block">Stores & Hours</a>
-            <a href="#" class="text-[#ffffffbf] text-lg font-medium block">Contact Us</a>
-            <a href="#" class="text-white text-lg font-medium block">Login</a>
-        </nav>
-</body>
+
+    <!-- Search Bar -->
+    <div class="px-4 mt-4">
+      <div class="bg-[#d4b69d] p-2 rounded-3xl flex items-center relative">
+        <input
+          type="text"
+          class="bg-transparent text-white placeholder-white focus:outline-none w-full pl-8"
+        />
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="absolute"
+        >
+          <path
+            d="M12.6266 11.5128L16 14.8855L14.8855 16L11.5128 12.6266C10.2579 13.6325 8.69706 14.1797 7.08871 14.1774C3.17574 14.1774 0 11.0017 0 7.08871C0 3.17574 3.17574 0 7.08871 0C11.0017 0 14.1774 3.17574 14.1774 7.08871C14.1797 8.69706 13.6325 10.2579 12.6266 11.5128ZM11.0466 10.9284C12.0462 9.90047 12.6044 8.52254 12.6021 7.08871C12.6021 4.04214 10.1345 1.57527 7.08871 1.57527C4.04214 1.57527 1.57527 4.04214 1.57527 7.08871C1.57527 10.1345 4.04214 12.6021 7.08871 12.6021C8.52254 12.6044 9.90047 12.0462 10.9284 11.0466L11.0466 10.9284Z"
+            fill="white"
+          />
+        </svg>
+      </div>
+    </div>
+
+    <!-- Menu Items -->
+    <nav class="mt-6 px-4 space-y-4">
+      <a href="#" class="text-white text-lg font-medium block">What’s new</a>
+      <a href="#" class="text-white text-lg font-medium block">Chokers</a>
+      <a href="#" class="text-white text-lg font-medium block">Necklaces</a>
+      <a href="#" class="text-white text-lg font-medium block">Rings</a>
+      <a href="#" class="text-white text-lg font-medium block">Earrings</a>
+    </nav>
+
+    <!-- Lower Menu Items -->
+    <nav class="mt-8 px-4 space-y-4">
+      <a href="#" class="text-[#ffffffbf] text-lg font-medium block"
+        >About CH</a
+      >
+      <a href="#" class="text-[#ffffffbf] text-lg font-medium block"
+        >Stores & Hours</a
+      >
+      <a href="#" class="text-[#ffffffbf] text-lg font-medium block"
+        >Contact Us</a
+      >
+      <a href="#" class="text-white text-lg font-medium block">Login</a>
+    </nav>
+  </body>
 </html>
