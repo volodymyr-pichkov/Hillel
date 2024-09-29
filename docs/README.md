@@ -23,8 +23,11 @@ The main page of the site, which provides infrastructure information about the s
 Main elements:
 
 Site logo;
-menu (links to other pages);
+
+Menu (links to other pages);
+
 Block with new products;
+
 Contact details;
 
 Clicking on menu links to navigate
@@ -53,6 +56,7 @@ A product or service filtering page that allows users to customize the display o
 Main elements:
 
 Checkboxes and sliders for selecting filtering options (price range, categories, etc.)
+
 Apply filters button
 
 ###
@@ -65,5 +69,7 @@ Login page for registered users.
 Main elements:
 
 Fields for entering login and password
+
 Login button
+
 Link to registration page for new users.
