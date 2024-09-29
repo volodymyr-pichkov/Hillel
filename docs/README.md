@@ -29,15 +29,21 @@ Contact details;
 
 Clicking on menu links to navigate
 
+___
+
 2. Catalog Page (catalog.html)
 
 Description:
 A product or service catalog page where users can browse and select products.
 
+___
+
 3. Menu Page (menu.html)
 
 Description:
 Menu page where users can view the services.
+
+___
 
 4. Filter Page (filter.html)
 
@@ -48,6 +54,8 @@ Main elements:
 
 Checkboxes and sliders for selecting filtering options (price range, categories, etc.)
 Apply filters button
+
+___
 
 5. Login Page (login.html)
 
